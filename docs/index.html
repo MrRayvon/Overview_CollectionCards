@@ -1,8 +1,346 @@
 <!doctype html>
-<html lang="nl"><head><meta charset="utf-8"><title>Card Tracker</title></head>
-<body style="font-family:sans-serif; padding:32px; background:#0f172a; color:#e2e8f0;">
-<h1>Card Tracker</h1>
-<p>Het rapport wordt gegenereerd zodra de eerste run van GitHub Actions klaar is.
-Trigger handmatig via Actions -> update-card-tracker -> Run workflow,
-of wacht tot de eerste geplande run (elk uur).</p>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Card Tracker - Pokemon & One Piece NL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #0f172a; --panel:#1e293b; --muted:#94a3b8; --fg:#e2e8f0;
+    --accent:#38bdf8; --good:#22c55e; --warn:#f59e0b; --bad:#ef4444;
+    --border:#334155;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: ui-sans-serif, system-ui, sans-serif; background:var(--bg); color:var(--fg); }
+  header { padding: 24px 32px; border-bottom:1px solid var(--border); }
+  header h1 { margin:0 0 4px 0; font-size: 22px; }
+  header .meta { color: var(--muted); font-size: 13px; }
+  main { padding: 24px 32px; max-width: 1200px; margin: 0 auto; }
+  h2 { margin-top: 36px; font-size: 18px; border-bottom:1px solid var(--border); padding-bottom:8px; }
+  h3 { margin: 18px 0 8px; font-size: 15px; color: var(--accent); }
+  table { width:100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align:left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+  tr.changed { background: rgba(56,189,248,0.08); }
+  tr.error { background: rgba(239,68,68,0.10); }
+  .badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; }
+  .b-good { background: rgba(34,197,94,0.15); color: var(--good); }
+  .b-warn { background: rgba(245,158,11,0.15); color: var(--warn); }
+  .b-bad { background: rgba(239,68,68,0.18); color: var(--bad); }
+  .b-info { background: rgba(56,189,248,0.15); color: var(--accent); }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 12px; }
+  .card { background: var(--panel); border:1px solid var(--border); border-radius: 8px; padding: 12px; }
+  .card .name { font-weight:600; font-size:14px; }
+  .card .meta { color: var(--muted); font-size: 12px; margin-top:4px; }
+  .card.new { outline: 2px solid var(--accent); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .changes { font-size: 12px; color: var(--muted); }
+  .changes .real { color: var(--fg); }
+  .pill { font-size:11px; padding:1px 6px; border-radius:4px; background:#334155; color:var(--muted); margin-right:4px; }
+  details > summary { cursor: pointer; padding: 4px 0; color: var(--muted); }
+  .empty { color: var(--muted); font-style: italic; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Card Tracker - Pokemon & One Piece (NL)</h1>
+  <div class="meta">Laatst bijgewerkt: 2026-05-07T09:48:47+00:00 - regio Maastricht en NL online</div>
+</header>
+<main>
+
+<h2>Set releases (officiele APIs)</h2>
+
+<h3>Pokemon TCG - laatste sets</h3>
+
+<p class="empty">Geen data (API niet bereikbaar?).</p>
+
+
+<h3>One Piece TCG - laatste sets</h3>
+
+<p class="empty">Geen data (API niet bereikbaar?).</p>
+
+
+
+<details>
+<summary>API fouten (1)</summary>
+<ul>
+<li><b>Pokemon TCG API</b>: HTTPSConnectionPool(host='api.pokemontcg.io', port=443): Read timed out. (read timeout=20)</li>
+</ul>
+</details>
+
+
+<h2>Maastricht en omstreken</h2>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Shop</th><th>Pagina</th><th>Status</th><th>Items (~)</th><th>Wijzigingen</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    
+    <tr class="error">
+      <td>Intertoys Maastricht</td>
+      <td><a href="https://www.intertoys.nl/zoeken?q=pokemon+booster" target="_blank" rel="noopener">Errorpagina</a></td>
+      <td>
+        
+          <span class="badge b-bad">403</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>Intertoys Maastricht</td>
+      <td><a href="https://www.intertoys.nl/zoeken?q=pokemon+elite+trainer" target="_blank" rel="noopener">Errorpagina</a></td>
+      <td>
+        
+          <span class="badge b-bad">403</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>MediaMarkt</td>
+      <td><a href="https://www.mediamarkt.nl/nl/search.html?query=pokemon+booster" target="_blank" rel="noopener">Just a moment...</a></td>
+      <td>
+        
+          <span class="badge b-bad">403</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>MediaMarkt</td>
+      <td><a href="https://www.mediamarkt.nl/nl/search.html?query=one+piece+card+game" target="_blank" rel="noopener">Just a moment...</a></td>
+      <td>
+        
+          <span class="badge b-bad">403</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>Weeb-U-Rus</td>
+      <td><a href="https://weeb-u-rus.nl/" target="_blank" rel="noopener">https://weeb-u-rus.nl/</a></td>
+      <td>
+        
+          <span class="badge b-bad">ERR</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>
+
+
+<h2>NL webshops</h2>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Shop</th><th>Pagina</th><th>Status</th><th>Items (~)</th><th>Wijzigingen</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    
+    <tr class="error">
+      <td>12kingdoms</td>
+      <td><a href="https://12kingdoms.nl/c-7301773/pokemon/" target="_blank" rel="noopener">https://12kingdoms.nl/c-7301773/pokemon/</a></td>
+      <td>
+        
+          <span class="badge b-bad">ERR</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>12kingdoms</td>
+      <td><a href="https://12kingdoms.nl/c-7311299/one-piece/" target="_blank" rel="noopener">https://12kingdoms.nl/c-7311299/one-piece/</a></td>
+      <td>
+        
+          <span class="badge b-bad">ERR</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>Hobbyzaken</td>
+      <td><a href="https://www.hobbyzaken.com/pokemon-tcg" target="_blank" rel="noopener">https://www.hobbyzaken.com/pokemon-tcg</a></td>
+      <td>
+        
+          <span class="badge b-bad">ERR</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>Hobbyzaken</td>
+      <td><a href="https://www.hobbyzaken.com/one-piece-card-game" target="_blank" rel="noopener">https://www.hobbyzaken.com/one-piece-card-game</a></td>
+      <td>
+        
+          <span class="badge b-bad">ERR</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>Boltius</td>
+      <td><a href="https://www.boltius.nl/c/pokemon-tcg/" target="_blank" rel="noopener">https://www.boltius.nl/c/pokemon-tcg/</a></td>
+      <td>
+        
+          <span class="badge b-bad">ERR</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>Boltius</td>
+      <td><a href="https://www.boltius.nl/c/one-piece-card-game/" target="_blank" rel="noopener">https://www.boltius.nl/c/one-piece-card-game/</a></td>
+      <td>
+        
+          <span class="badge b-bad">ERR</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>Pokemoncenter.nl</td>
+      <td><a href="https://www.pokemoncenter.com/nl/category/booster-packs" target="_blank" rel="noopener">pokemoncenter.com</a></td>
+      <td>
+        
+          <span class="badge b-bad">403</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>Bol.com</td>
+      <td><a href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+booster+box" target="_blank" rel="noopener">bol</a></td>
+      <td>
+        
+          <span class="badge b-bad">403</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>Bol.com</td>
+      <td><a href="https://www.bol.com/nl/nl/s/?searchtext=one+piece+card+game+booster" target="_blank" rel="noopener">bol</a></td>
+      <td>
+        
+          <span class="badge b-bad">403</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>
+
+
+<footer style="margin-top:48px; color:var(--muted); font-size:12px;">
+  Tip: pas <code>config/sources.yaml</code> aan om bronnen toe te voegen of te verwijderen.
+  Geschiedenis staat in <code>data/history.jsonl</code>.
+</footer>
+</main>
 </body></html>
