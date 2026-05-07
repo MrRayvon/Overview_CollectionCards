@@ -1,24 +1,26 @@
 # Bronnen voor de card tracker.
-# Pas deze file aan om winkels of pagina's toe te voegen / te verwijderen.
 #
-# Categorieen:
-#   nl-online   : landelijke webshops
-#   maastricht  : winkels in Maastricht en directe omgeving
-#   api         : officiele API bronnen (set releases)
-
-apis:
-  - name: "Pokemon TCG API"
-    kind: pokemon_api
-    description: "Officiele Pokemon TCG set-data."
-  - name: "One Piece TCG API"
-    kind: onepiece_api
-    description: "apitcg.com one-piece set/card data."
+# monitor: true   -> page snapshot + diff in dashboard
+# monitor: false  -> alleen als snelkoppeling (klik-link) in dashboard.
+#                    Gebruik voor Cloudflare-zware shops zoals Bol/MediaMarkt
+#                    die GitHub Actions IPs hard blokkeren.
 
 shops:
-  # --- Maastricht en omstreken (TCG packs / boosters) ---
-  - name: "Intertoys Maastricht"
+  # ===== Maastricht / dichtbij =====
+  - name: "Weebs 'R Us (Maastricht)"
+    region: maastricht
+    games: [pokemon, onepiece]
+    monitor: true
+    notes: "Anime/TCG winkel in centrum Maastricht."
+    urls:
+      - "https://weebsrus.com/"
+      - "https://weebsrus.nl/"
+
+  - name: "Intertoys"
     region: maastricht
     games: [pokemon]
+    monitor: false
+    notes: "Cloudflare-zwaar; klik-link i.p.v. monitoren."
     urls:
       - "https://www.intertoys.nl/zoeken?q=pokemon+booster"
       - "https://www.intertoys.nl/zoeken?q=pokemon+elite+trainer"
@@ -26,49 +28,86 @@ shops:
   - name: "MediaMarkt"
     region: maastricht
     games: [pokemon, onepiece]
-    notes: "Landelijke voorraad; filiaal-voorraad zie je pas op productpagina."
+    monitor: false
+    notes: "Cloudflare bot management; klik-link i.p.v. monitoren."
     urls:
-      - "https://www.mediamarkt.nl/nl/search.html?query=pokemon+booster"
+      - "https://www.mediamarkt.nl/nl/category/pokemon-kaarten-2071.html"
       - "https://www.mediamarkt.nl/nl/search.html?query=one+piece+card+game"
 
-  - name: "Weeb-U-Rus"
-    region: maastricht
-    games: [pokemon, onepiece]
-    notes: "Vul handmatig de juiste URL's in als de shop pagina structuur duidelijk is."
-    urls:
-      - "https://weeb-u-rus.nl/"
-
-  # --- Landelijke NL webshops ---
-  - name: "12kingdoms"
+  # ===== Landelijke NL TCG specialisten (meestal scraperbaar) =====
+  - name: "CatchYourCards"
     region: nl-online
     games: [pokemon, onepiece]
+    monitor: true
     urls:
-      - "https://12kingdoms.nl/c-7301773/pokemon/"
-      - "https://12kingdoms.nl/c-7311299/one-piece/"
+      - "https://catchyourcards.nl/pokemon/"
+      - "https://catchyourcards.nl/pokemon/booster-packs/"
+      - "https://catchyourcards.nl/pokemon/booster-bundle/"
+      - "https://catchyourcards.nl/onepiece/"
 
-  - name: "Hobbyzaken"
+  - name: "TCG Company"
     region: nl-online
     games: [pokemon, onepiece]
+    monitor: true
     urls:
-      - "https://www.hobbyzaken.com/pokemon-tcg"
-      - "https://www.hobbyzaken.com/one-piece-card-game"
+      - "https://tcgcompany.nl/pokemon-booster-box/"
+      - "https://tcgcompany.nl/one-piece/"
 
-  - name: "Boltius"
-    region: nl-online
-    games: [pokemon, onepiece]
-    urls:
-      - "https://www.boltius.nl/c/pokemon-tcg/"
-      - "https://www.boltius.nl/c/one-piece-card-game/"
-
-  - name: "Pokemoncenter.nl"
+  - name: "De Broergrot"
     region: nl-online
     games: [pokemon]
+    monitor: true
+    urls:
+      - "https://www.debroergrot.nl/"
+
+  - name: "TCG Cards"
+    region: nl-online
+    games: [pokemon, onepiece]
+    monitor: true
+    urls:
+      - "https://www.tcg-cards.nl/"
+
+  - name: "BES Cards"
+    region: nl-online
+    games: [pokemon]
+    monitor: true
+    urls:
+      - "https://www.bescards.com/pokemon-booster-box/"
+
+  - name: "PKM Winkel"
+    region: nl-online
+    games: [pokemon]
+    monitor: true
+    urls:
+      - "https://www.pkmwinkel.nl/collections/booster-box"
+
+  - name: "TCG Reus"
+    region: nl-online
+    games: [pokemon, onepiece]
+    monitor: true
+    urls:
+      - "https://www.tcgreus.nl/"
+
+  - name: "TCG Japan"
+    region: nl-online
+    games: [pokemon]
+    monitor: true
+    notes: "Japanse Pokemon boosters en sealed product."
+    urls:
+      - "https://tcgjapan.nl/nl/"
+
+  # ===== Cloudflare-zwaar; alleen als snelle link =====
+  - name: "Pokemoncenter.com (NL)"
+    region: nl-online
+    games: [pokemon]
+    monitor: false
     urls:
       - "https://www.pokemoncenter.com/nl/category/booster-packs"
 
   - name: "Bol.com"
     region: nl-online
     games: [pokemon, onepiece]
+    monitor: false
     urls:
       - "https://www.bol.com/nl/nl/s/?searchtext=pokemon+booster+box"
       - "https://www.bol.com/nl/nl/s/?searchtext=one+piece+card+game+booster"

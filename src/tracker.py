@@ -3,9 +3,6 @@
 Leest config, draait scrapers, vergelijkt met laatste snapshot per URL,
 schrijft history (jsonl) en een laatste-state file (json), en genereert
 het HTML rapport.
-
-Run lokaal:    python -m src.tracker
-GitHub Actions roept hetzelfde aan via workflow.
 """
 from __future__ import annotations
 
@@ -55,7 +52,6 @@ def _append_history(entries: list[dict]) -> None:
 
 
 def _diff(old: dict | None, new: dict) -> list[str]:
-    """Geef leesbare changes terug tussen twee snapshots."""
     if old is None:
         return ["nieuwe pagina toegevoegd"]
     changes = []
@@ -87,10 +83,21 @@ def run() -> int:
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
     shop_results: list[dict] = []
+    quick_links: list[dict] = []
     history_entries: list[dict] = []
     new_state: dict = {}
 
     for shop in cfg.get("shops", []):
+        monitor = shop.get("monitor", True)
+        if not monitor:
+            quick_links.append({
+                "shop": shop["name"],
+                "region": shop.get("region"),
+                "notes": shop.get("notes"),
+                "games": shop.get("games", []),
+                "urls": shop.get("urls", []),
+            })
+            continue
         for url in shop.get("urls", []):
             log.info("ophalen: %s", url)
             snap = webshop.snapshot(url)
@@ -107,7 +114,7 @@ def run() -> int:
             shop_results.append(entry)
             history_entries.append(entry)
             new_state[url] = entry
-            time.sleep(1)  # wees vriendelijk voor de servers
+            time.sleep(1)
 
     # APIs
     pkm_sets: list[dict] = []
@@ -140,15 +147,15 @@ def run() -> int:
     SETS_STATE.parent.mkdir(parents=True, exist_ok=True)
     SETS_STATE.write_text(json.dumps(sets_state_new, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    # Persisteer
     _save_state(new_state)
-    _append_history(history_entries)
+    if history_entries:
+        _append_history(history_entries)
 
-    # Bouw rapport
     render(
         out=REPORT,
         generated_at=now,
         shop_results=shop_results,
+        quick_links=quick_links,
         pkm_sets=pkm_sets,
         op_sets=op_sets,
         new_pkm_ids=sorted(new_pkm_ids),
