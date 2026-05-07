@@ -1,0 +1,74 @@
+# Bronnen voor de card tracker.
+# Pas deze file aan om winkels of pagina's toe te voegen / te verwijderen.
+#
+# Categorieen:
+#   nl-online   : landelijke webshops
+#   maastricht  : winkels in Maastricht en directe omgeving
+#   api         : officiele API bronnen (set releases)
+
+apis:
+  - name: "Pokemon TCG API"
+    kind: pokemon_api
+    description: "Officiele Pokemon TCG set-data."
+  - name: "One Piece TCG API"
+    kind: onepiece_api
+    description: "apitcg.com one-piece set/card data."
+
+shops:
+  # --- Maastricht en omstreken (TCG packs / boosters) ---
+  - name: "Intertoys Maastricht"
+    region: maastricht
+    games: [pokemon]
+    urls:
+      - "https://www.intertoys.nl/zoeken?q=pokemon+booster"
+      - "https://www.intertoys.nl/zoeken?q=pokemon+elite+trainer"
+
+  - name: "MediaMarkt"
+    region: maastricht
+    games: [pokemon, onepiece]
+    notes: "Landelijke voorraad; filiaal-voorraad zie je pas op productpagina."
+    urls:
+      - "https://www.mediamarkt.nl/nl/search.html?query=pokemon+booster"
+      - "https://www.mediamarkt.nl/nl/search.html?query=one+piece+card+game"
+
+  - name: "Weeb-U-Rus"
+    region: maastricht
+    games: [pokemon, onepiece]
+    notes: "Vul handmatig de juiste URL's in als de shop pagina structuur duidelijk is."
+    urls:
+      - "https://weeb-u-rus.nl/"
+
+  # --- Landelijke NL webshops ---
+  - name: "12kingdoms"
+    region: nl-online
+    games: [pokemon, onepiece]
+    urls:
+      - "https://12kingdoms.nl/c-7301773/pokemon/"
+      - "https://12kingdoms.nl/c-7311299/one-piece/"
+
+  - name: "Hobbyzaken"
+    region: nl-online
+    games: [pokemon, onepiece]
+    urls:
+      - "https://www.hobbyzaken.com/pokemon-tcg"
+      - "https://www.hobbyzaken.com/one-piece-card-game"
+
+  - name: "Boltius"
+    region: nl-online
+    games: [pokemon, onepiece]
+    urls:
+      - "https://www.boltius.nl/c/pokemon-tcg/"
+      - "https://www.boltius.nl/c/one-piece-card-game/"
+
+  - name: "Pokemoncenter.nl"
+    region: nl-online
+    games: [pokemon]
+    urls:
+      - "https://www.pokemoncenter.com/nl/category/booster-packs"
+
+  - name: "Bol.com"
+    region: nl-online
+    games: [pokemon, onepiece]
+    urls:
+      - "https://www.bol.com/nl/nl/s/?searchtext=pokemon+booster+box"
+      - "https://www.bol.com/nl/nl/s/?searchtext=one+piece+card+game+booster"
