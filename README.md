@@ -1,7 +1,6 @@
 # Card Tracker - Pokemon & One Piece (NL)
 
-Gratis tool die voor jou bijhoudt of er bij Nederlandse webshops en
-in Maastricht (Intertoys, MediaMarkt, Weeb-U-Rus) **nieuwe voorraad of
+Gratis tool die voor jou bijhoudt of er bij Nederlandse webshops **nieuwe voorraad of
 nieuwe sets** zijn. Doel: betere inkoopbeslissingen voor card packs.
 
 ## Hoe het werkt
@@ -63,10 +62,7 @@ run zie je echte wijzigingen.
 
 ## Beperkingen
 
-- Lokale Maastrichtse winkels (zoals Weeb-U-Rus) hebben vaak geen
-  online voorraad-status. Het script ziet dan alleen of de pagina is
-  veranderd. Voor die winkels werkt het vooral als signaal: "ga even
-  kijken / bel even".
+
 - Sites achter Cloudflare-bescherming (bv. soms MediaMarkt of
   Bol.com) kunnen 403 geven. In het rapport zie je dat als rode rij;
   dan helpt het om je eigen lokale runner te gebruiken of een andere
