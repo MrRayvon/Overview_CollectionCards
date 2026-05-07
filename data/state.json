@@ -1,293 +1,353 @@
 {
-  "https://www.intertoys.nl/zoeken?q=pokemon+booster": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "Intertoys Maastricht",
+  "https://weebsrus.com/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "Weebs 'R Us (Maastricht)",
     "region": "maastricht",
     "games": [
-      "pokemon"
+      "pokemon",
+      "onepiece"
     ],
-    "url": "https://www.intertoys.nl/zoeken?q=pokemon+booster",
-    "ok": false,
-    "status": 403,
-    "title": "Errorpagina",
-    "content_hash": "87db24e20228733a",
-    "char_count": 671,
-    "price_count": 0,
-    "prices": [],
+    "url": "https://weebsrus.com/",
+    "ok": true,
+    "status": 200,
+    "title": "Weebs 'R Us - De beste winkel van Nederland voor Anime, Manga en TCG!",
+    "content_hash": "6bfe5828bbd7e759",
+    "char_count": 10087,
+    "price_count": 18,
+    "prices": [
+      "12.95",
+      "129.95",
+      "13.95",
+      "139.95",
+      "17.95",
+      "24.95",
+      "250",
+      "37.95",
+      "39.95",
+      "4.95",
+      "44.95",
+      "49.95",
+      "5.95",
+      "59.95",
+      "69.95",
+      "79.95",
+      "89.95",
+      "94.95"
+    ],
     "error": null,
     "changes": [
-      "fout bij ophalen (403)"
+      "nieuwe pagina toegevoegd"
     ]
   },
-  "https://www.intertoys.nl/zoeken?q=pokemon+elite+trainer": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "Intertoys Maastricht",
+  "https://weebsrus.nl/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "Weebs 'R Us (Maastricht)",
     "region": "maastricht",
     "games": [
-      "pokemon"
+      "pokemon",
+      "onepiece"
     ],
-    "url": "https://www.intertoys.nl/zoeken?q=pokemon+elite+trainer",
-    "ok": false,
-    "status": 403,
-    "title": "Errorpagina",
-    "content_hash": "57a58b99c8caed14",
-    "char_count": 671,
-    "price_count": 0,
-    "prices": [],
+    "url": "https://weebsrus.nl/",
+    "ok": true,
+    "status": 200,
+    "title": "Weebs 'R Us - De beste winkel van Nederland voor Anime, Manga en TCG!",
+    "content_hash": "6bfe5828bbd7e759",
+    "char_count": 10087,
+    "price_count": 18,
+    "prices": [
+      "12.95",
+      "129.95",
+      "13.95",
+      "139.95",
+      "17.95",
+      "24.95",
+      "250",
+      "37.95",
+      "39.95",
+      "4.95",
+      "44.95",
+      "49.95",
+      "5.95",
+      "59.95",
+      "69.95",
+      "79.95",
+      "89.95",
+      "94.95"
+    ],
     "error": null,
     "changes": [
-      "fout bij ophalen (403)"
+      "nieuwe pagina toegevoegd"
     ]
   },
-  "https://www.mediamarkt.nl/nl/search.html?query=pokemon+booster": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "MediaMarkt",
-    "region": "maastricht",
+  "https://catchyourcards.nl/pokemon/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "CatchYourCards",
+    "region": "nl-online",
     "games": [
       "pokemon",
       "onepiece"
     ],
-    "url": "https://www.mediamarkt.nl/nl/search.html?query=pokemon+booster",
+    "url": "https://catchyourcards.nl/pokemon/",
     "ok": false,
     "status": 403,
-    "title": "Just a moment...",
-    "content_hash": "301dc171e5fa8c5f",
-    "char_count": 16,
+    "title": "",
+    "content_hash": "4912400678f53188",
+    "char_count": 2450,
     "price_count": 0,
     "prices": [],
-    "error": null,
+    "error": "HTTP 403",
     "changes": [
-      "fout bij ophalen (403)"
+      "nieuwe pagina toegevoegd"
     ]
   },
-  "https://www.mediamarkt.nl/nl/search.html?query=one+piece+card+game": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "MediaMarkt",
-    "region": "maastricht",
+  "https://catchyourcards.nl/pokemon/booster-packs/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "CatchYourCards",
+    "region": "nl-online",
     "games": [
       "pokemon",
       "onepiece"
     ],
-    "url": "https://www.mediamarkt.nl/nl/search.html?query=one+piece+card+game",
+    "url": "https://catchyourcards.nl/pokemon/booster-packs/",
     "ok": false,
     "status": 403,
-    "title": "Just a moment...",
-    "content_hash": "301dc171e5fa8c5f",
-    "char_count": 16,
-    "price_count": 0,
-    "prices": [],
-    "error": null,
-    "changes": [
-      "fout bij ophalen (403)"
-    ]
-  },
-  "https://weeb-u-rus.nl/": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "Weeb-U-Rus",
-    "region": "maastricht",
-    "games": [
-      "pokemon",
-      "onepiece"
-    ],
-    "url": "https://weeb-u-rus.nl/",
-    "ok": false,
-    "status": 0,
     "title": "",
-    "content_hash": "",
-    "char_count": 0,
+    "content_hash": "5e0469044ada6bec",
+    "char_count": 1922,
     "price_count": 0,
     "prices": [],
-    "error": "HTTPSConnectionPool(host='weeb-u-rus.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='weeb-u-rus.nl', port=443): Failed to resolve 'weeb-u-rus.nl' ([Errno -2] Name or service not known)\"))",
+    "error": "HTTP 403",
     "changes": [
-      "fout bij ophalen (HTTPSConnectionPool(host='weeb-u-rus.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='weeb-u-rus.nl', port=443): Failed to resolve 'weeb-u-rus.nl' ([Errno -2] Name or service not known)\")))"
+      "nieuwe pagina toegevoegd"
     ]
   },
-  "https://12kingdoms.nl/c-7301773/pokemon/": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "12kingdoms",
+  "https://catchyourcards.nl/pokemon/booster-bundle/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "CatchYourCards",
     "region": "nl-online",
     "games": [
       "pokemon",
       "onepiece"
     ],
-    "url": "https://12kingdoms.nl/c-7301773/pokemon/",
+    "url": "https://catchyourcards.nl/pokemon/booster-bundle/",
     "ok": false,
-    "status": 0,
+    "status": 403,
     "title": "",
-    "content_hash": "",
-    "char_count": 0,
+    "content_hash": "30772cda15a7cb08",
+    "char_count": 3003,
     "price_count": 0,
     "prices": [],
-    "error": "HTTPSConnectionPool(host='12kingdoms.nl', port=443): Max retries exceeded with url: /c-7301773/pokemon/ (Caused by NameResolutionError(\"HTTPSConnection(host='12kingdoms.nl', port=443): Failed to resolve '12kingdoms.nl' ([Errno -2] Name or service not known)\"))",
+    "error": "HTTP 403",
     "changes": [
-      "fout bij ophalen (HTTPSConnectionPool(host='12kingdoms.nl', port=443): Max retries exceeded with url: /c-7301773/pokemon/ (Caused by NameResolutionError(\"HTTPSConnection(host='12kingdoms.nl', port=443): Failed to resolve '12kingdoms.nl' ([Errno -2] Name or service not known)\")))"
+      "nieuwe pagina toegevoegd"
     ]
   },
-  "https://12kingdoms.nl/c-7311299/one-piece/": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "12kingdoms",
+  "https://catchyourcards.nl/onepiece/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "CatchYourCards",
     "region": "nl-online",
     "games": [
       "pokemon",
       "onepiece"
     ],
-    "url": "https://12kingdoms.nl/c-7311299/one-piece/",
+    "url": "https://catchyourcards.nl/onepiece/",
     "ok": false,
-    "status": 0,
+    "status": 403,
     "title": "",
-    "content_hash": "",
-    "char_count": 0,
+    "content_hash": "849c3223e9ed08a0",
+    "char_count": 3107,
     "price_count": 0,
     "prices": [],
-    "error": "HTTPSConnectionPool(host='12kingdoms.nl', port=443): Max retries exceeded with url: /c-7311299/one-piece/ (Caused by NameResolutionError(\"HTTPSConnection(host='12kingdoms.nl', port=443): Failed to resolve '12kingdoms.nl' ([Errno -2] Name or service not known)\"))",
+    "error": "HTTP 403",
     "changes": [
-      "fout bij ophalen (HTTPSConnectionPool(host='12kingdoms.nl', port=443): Max retries exceeded with url: /c-7311299/one-piece/ (Caused by NameResolutionError(\"HTTPSConnection(host='12kingdoms.nl', port=443): Failed to resolve '12kingdoms.nl' ([Errno -2] Name or service not known)\")))"
+      "nieuwe pagina toegevoegd"
     ]
   },
-  "https://www.hobbyzaken.com/pokemon-tcg": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "Hobbyzaken",
+  "https://tcgcompany.nl/pokemon-booster-box/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "TCG Company",
     "region": "nl-online",
     "games": [
       "pokemon",
       "onepiece"
     ],
-    "url": "https://www.hobbyzaken.com/pokemon-tcg",
+    "url": "https://tcgcompany.nl/pokemon-booster-box/",
     "ok": false,
-    "status": 0,
+    "status": 403,
     "title": "",
-    "content_hash": "",
-    "char_count": 0,
+    "content_hash": "38ce0148644d6919",
+    "char_count": 26,
     "price_count": 0,
     "prices": [],
-    "error": "HTTPSConnectionPool(host='www.hobbyzaken.com', port=443): Max retries exceeded with url: /pokemon-tcg (Caused by NameResolutionError(\"HTTPSConnection(host='www.hobbyzaken.com', port=443): Failed to resolve 'www.hobbyzaken.com' ([Errno -2] Name or service not known)\"))",
+    "error": "HTTP 403",
     "changes": [
-      "fout bij ophalen (HTTPSConnectionPool(host='www.hobbyzaken.com', port=443): Max retries exceeded with url: /pokemon-tcg (Caused by NameResolutionError(\"HTTPSConnection(host='www.hobbyzaken.com', port=443): Failed to resolve 'www.hobbyzaken.com' ([Errno -2] Name or service not known)\")))"
+      "nieuwe pagina toegevoegd"
     ]
   },
-  "https://www.hobbyzaken.com/one-piece-card-game": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "Hobbyzaken",
+  "https://tcgcompany.nl/one-piece/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "TCG Company",
     "region": "nl-online",
     "games": [
       "pokemon",
       "onepiece"
     ],
-    "url": "https://www.hobbyzaken.com/one-piece-card-game",
+    "url": "https://tcgcompany.nl/one-piece/",
     "ok": false,
-    "status": 0,
+    "status": 403,
     "title": "",
-    "content_hash": "",
-    "char_count": 0,
+    "content_hash": "38ce0148644d6919",
+    "char_count": 26,
     "price_count": 0,
     "prices": [],
-    "error": "HTTPSConnectionPool(host='www.hobbyzaken.com', port=443): Max retries exceeded with url: /one-piece-card-game (Caused by NameResolutionError(\"HTTPSConnection(host='www.hobbyzaken.com', port=443): Failed to resolve 'www.hobbyzaken.com' ([Errno -2] Name or service not known)\"))",
+    "error": "HTTP 403",
     "changes": [
-      "fout bij ophalen (HTTPSConnectionPool(host='www.hobbyzaken.com', port=443): Max retries exceeded with url: /one-piece-card-game (Caused by NameResolutionError(\"HTTPSConnection(host='www.hobbyzaken.com', port=443): Failed to resolve 'www.hobbyzaken.com' ([Errno -2] Name or service not known)\")))"
+      "nieuwe pagina toegevoegd"
     ]
   },
-  "https://www.boltius.nl/c/pokemon-tcg/": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "Boltius",
-    "region": "nl-online",
-    "games": [
-      "pokemon",
-      "onepiece"
-    ],
-    "url": "https://www.boltius.nl/c/pokemon-tcg/",
-    "ok": false,
-    "status": 0,
-    "title": "",
-    "content_hash": "",
-    "char_count": 0,
-    "price_count": 0,
-    "prices": [],
-    "error": "HTTPSConnectionPool(host='www.boltius.nl', port=443): Max retries exceeded with url: /c/pokemon-tcg/ (Caused by NameResolutionError(\"HTTPSConnection(host='www.boltius.nl', port=443): Failed to resolve 'www.boltius.nl' ([Errno -2] Name or service not known)\"))",
-    "changes": [
-      "fout bij ophalen (HTTPSConnectionPool(host='www.boltius.nl', port=443): Max retries exceeded with url: /c/pokemon-tcg/ (Caused by NameResolutionError(\"HTTPSConnection(host='www.boltius.nl', port=443): Failed to resolve 'www.boltius.nl' ([Errno -2] Name or service not known)\")))"
-    ]
-  },
-  "https://www.boltius.nl/c/one-piece-card-game/": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "Boltius",
-    "region": "nl-online",
-    "games": [
-      "pokemon",
-      "onepiece"
-    ],
-    "url": "https://www.boltius.nl/c/one-piece-card-game/",
-    "ok": false,
-    "status": 0,
-    "title": "",
-    "content_hash": "",
-    "char_count": 0,
-    "price_count": 0,
-    "prices": [],
-    "error": "HTTPSConnectionPool(host='www.boltius.nl', port=443): Max retries exceeded with url: /c/one-piece-card-game/ (Caused by NameResolutionError(\"HTTPSConnection(host='www.boltius.nl', port=443): Failed to resolve 'www.boltius.nl' ([Errno -2] Name or service not known)\"))",
-    "changes": [
-      "fout bij ophalen (HTTPSConnectionPool(host='www.boltius.nl', port=443): Max retries exceeded with url: /c/one-piece-card-game/ (Caused by NameResolutionError(\"HTTPSConnection(host='www.boltius.nl', port=443): Failed to resolve 'www.boltius.nl' ([Errno -2] Name or service not known)\")))"
-    ]
-  },
-  "https://www.pokemoncenter.com/nl/category/booster-packs": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "Pokemoncenter.nl",
+  "https://www.debroergrot.nl/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "De Broergrot",
     "region": "nl-online",
     "games": [
       "pokemon"
     ],
-    "url": "https://www.pokemoncenter.com/nl/category/booster-packs",
-    "ok": false,
-    "status": 403,
-    "title": "pokemoncenter.com",
-    "content_hash": "0978aa497e24e7c4",
-    "char_count": 61,
+    "url": "https://www.debroergrot.nl/",
+    "ok": true,
+    "status": 200,
+    "title": "",
+    "content_hash": "acbafe831f7dbbed",
+    "char_count": 82690,
     "price_count": 0,
     "prices": [],
     "error": null,
     "changes": [
-      "fout bij ophalen (403)"
+      "nieuwe pagina toegevoegd"
     ]
   },
-  "https://www.bol.com/nl/nl/s/?searchtext=pokemon+booster+box": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "Bol.com",
+  "https://www.tcg-cards.nl/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "TCG Cards",
     "region": "nl-online",
     "games": [
       "pokemon",
       "onepiece"
     ],
-    "url": "https://www.bol.com/nl/nl/s/?searchtext=pokemon+booster+box",
-    "ok": false,
-    "status": 403,
-    "title": "bol",
-    "content_hash": "18d3682a9f23b513",
-    "char_count": 1197,
+    "url": "https://www.tcg-cards.nl/",
+    "ok": true,
+    "status": 200,
+    "title": "TCG Cards - De beste online Pokémon TCG webshop van Nederland!",
+    "content_hash": "5b277aa5f64cf5f2",
+    "char_count": 2684,
+    "price_count": 22,
+    "prices": [
+      "169",
+      "189",
+      "20",
+      "209",
+      "21",
+      "22",
+      "239",
+      "24",
+      "249",
+      "250",
+      "269",
+      "279",
+      "29",
+      "34",
+      "35",
+      "49",
+      "6",
+      "64",
+      "7",
+      "79",
+      "94",
+      "99"
+    ],
+    "error": null,
+    "changes": [
+      "nieuwe pagina toegevoegd"
+    ]
+  },
+  "https://www.bescards.com/pokemon-booster-box/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "BES Cards",
+    "region": "nl-online",
+    "games": [
+      "pokemon"
+    ],
+    "url": "https://www.bescards.com/pokemon-booster-box/",
+    "ok": true,
+    "status": 200,
+    "title": "",
+    "content_hash": "d0c41e9d0704ce77",
+    "char_count": 43322,
     "price_count": 0,
     "prices": [],
     "error": null,
     "changes": [
-      "fout bij ophalen (403)"
+      "nieuwe pagina toegevoegd"
     ]
   },
-  "https://www.bol.com/nl/nl/s/?searchtext=one+piece+card+game+booster": {
-    "ts": "2026-05-07T19:20:07+00:00",
-    "shop": "Bol.com",
+  "https://www.pkmwinkel.nl/collections/booster-box": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "PKM Winkel",
+    "region": "nl-online",
+    "games": [
+      "pokemon"
+    ],
+    "url": "https://www.pkmwinkel.nl/collections/booster-box",
+    "ok": true,
+    "status": 200,
+    "title": "",
+    "content_hash": "2bbf6c7c7b7e30fc",
+    "char_count": 45801,
+    "price_count": 0,
+    "prices": [],
+    "error": null,
+    "changes": [
+      "nieuwe pagina toegevoegd"
+    ]
+  },
+  "https://www.tcgreus.nl/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "TCG Reus",
     "region": "nl-online",
     "games": [
       "pokemon",
       "onepiece"
     ],
-    "url": "https://www.bol.com/nl/nl/s/?searchtext=one+piece+card+game+booster",
-    "ok": false,
-    "status": 403,
-    "title": "bol",
-    "content_hash": "e95279ab985603a6",
-    "char_count": 1197,
+    "url": "https://www.tcgreus.nl/",
+    "ok": true,
+    "status": 200,
+    "title": "",
+    "content_hash": "17f24f5e1f6c7cc2",
+    "char_count": 55404,
     "price_count": 0,
     "prices": [],
     "error": null,
     "changes": [
-      "fout bij ophalen (403)"
+      "nieuwe pagina toegevoegd"
+    ]
+  },
+  "https://tcgjapan.nl/nl/": {
+    "ts": "2026-05-07T19:29:42+00:00",
+    "shop": "TCG Japan",
+    "region": "nl-online",
+    "games": [
+      "pokemon"
+    ],
+    "url": "https://tcgjapan.nl/nl/",
+    "ok": true,
+    "status": 200,
+    "title": "",
+    "content_hash": "39c3a74c0df2a177",
+    "char_count": 20357,
+    "price_count": 0,
+    "prices": [],
+    "error": null,
+    "changes": [
+      "nieuwe pagina toegevoegd"
     ]
   }
 }

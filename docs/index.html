@@ -28,7 +28,7 @@
   .b-warn { background: rgba(245,158,11,0.15); color: var(--warn); }
   .b-bad { background: rgba(239,68,68,0.18); color: var(--bad); }
   .b-info { background: rgba(56,189,248,0.15); color: var(--accent); }
-  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 12px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 12px; }
   .card { background: var(--panel); border:1px solid var(--border); border-radius: 8px; padding: 12px; }
   .card .name { font-weight:600; font-size:14px; }
   .card .meta { color: var(--muted); font-size: 12px; margin-top:4px; }
@@ -40,12 +40,13 @@
   .pill { font-size:11px; padding:1px 6px; border-radius:4px; background:#334155; color:var(--muted); margin-right:4px; }
   details > summary { cursor: pointer; padding: 4px 0; color: var(--muted); }
   .empty { color: var(--muted); font-style: italic; }
+  .lead { color: var(--muted); font-size: 13px; margin: 4px 0 12px; }
 </style>
 </head>
 <body>
 <header>
   <h1>Card Tracker - Pokemon & One Piece (NL)</h1>
-  <div class="meta">Laatst bijgewerkt: 2026-05-07T19:20:07+00:00 - regio Maastricht en NL online</div>
+  <div class="meta">Laatst bijgewerkt: 2026-05-07T19:29:42+00:00</div>
 </header>
 <main>
 
@@ -174,6 +175,57 @@
 
 
 <h2>Maastricht en omstreken</h2>
+<p class="lead">Gemonitorde pagina's (snapshot + diff per uur).</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Shop</th><th>Pagina</th><th>Status</th><th>Items (~)</th><th>Wijzigingen</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    
+    <tr class="changed">
+      <td>Weebs 'R Us (Maastricht)</td>
+      <td><a href="https://weebsrus.com/" target="_blank" rel="noopener">Weebs 'R Us - De beste winkel van Nederland voor Anime, Manga en TCG!</a></td>
+      <td>
+        
+          <span class="badge b-good">200</span>
+        
+      </td>
+      <td>18</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="changed">
+      <td>Weebs 'R Us (Maastricht)</td>
+      <td><a href="https://weebsrus.nl/" target="_blank" rel="noopener">Weebs 'R Us - De beste winkel van Nederland voor Anime, Manga en TCG!</a></td>
+      <td>
+        
+          <span class="badge b-good">200</span>
+        
+      </td>
+      <td>18</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>
+
+
+<h2>NL webshops (gemonitord)</h2>
+<p class="lead">Kleine TCG-specialisten die we kunnen scrapen vanuit de cloud.</p>
 
 
 <table>
@@ -186,8 +238,8 @@
   
     
     <tr class="error">
-      <td>Intertoys Maastricht</td>
-      <td><a href="https://www.intertoys.nl/zoeken?q=pokemon+booster" target="_blank" rel="noopener">Errorpagina</a></td>
+      <td>CatchYourCards</td>
+      <td><a href="https://catchyourcards.nl/pokemon/" target="_blank" rel="noopener">https://catchyourcards.nl/pokemon/</a></td>
       <td>
         
           <span class="badge b-bad">403</span>
@@ -196,15 +248,15 @@
       <td>0</td>
       <td class="changes">
         
-          <div class="real">- fout bij ophalen (403)</div>
+          <div class="real">- nieuwe pagina toegevoegd</div>
         
       </td>
     </tr>
   
     
     <tr class="error">
-      <td>Intertoys Maastricht</td>
-      <td><a href="https://www.intertoys.nl/zoeken?q=pokemon+elite+trainer" target="_blank" rel="noopener">Errorpagina</a></td>
+      <td>CatchYourCards</td>
+      <td><a href="https://catchyourcards.nl/pokemon/booster-packs/" target="_blank" rel="noopener">https://catchyourcards.nl/pokemon/booster-packs/</a></td>
       <td>
         
           <span class="badge b-bad">403</span>
@@ -213,15 +265,15 @@
       <td>0</td>
       <td class="changes">
         
-          <div class="real">- fout bij ophalen (403)</div>
+          <div class="real">- nieuwe pagina toegevoegd</div>
         
       </td>
     </tr>
   
     
     <tr class="error">
-      <td>MediaMarkt</td>
-      <td><a href="https://www.mediamarkt.nl/nl/search.html?query=pokemon+booster" target="_blank" rel="noopener">Just a moment...</a></td>
+      <td>CatchYourCards</td>
+      <td><a href="https://catchyourcards.nl/pokemon/booster-bundle/" target="_blank" rel="noopener">https://catchyourcards.nl/pokemon/booster-bundle/</a></td>
       <td>
         
           <span class="badge b-bad">403</span>
@@ -230,15 +282,15 @@
       <td>0</td>
       <td class="changes">
         
-          <div class="real">- fout bij ophalen (403)</div>
+          <div class="real">- nieuwe pagina toegevoegd</div>
         
       </td>
     </tr>
   
     
     <tr class="error">
-      <td>MediaMarkt</td>
-      <td><a href="https://www.mediamarkt.nl/nl/search.html?query=one+piece+card+game" target="_blank" rel="noopener">Just a moment...</a></td>
+      <td>CatchYourCards</td>
+      <td><a href="https://catchyourcards.nl/onepiece/" target="_blank" rel="noopener">https://catchyourcards.nl/onepiece/</a></td>
       <td>
         
           <span class="badge b-bad">403</span>
@@ -247,24 +299,143 @@
       <td>0</td>
       <td class="changes">
         
-          <div class="real">- fout bij ophalen (403)</div>
+          <div class="real">- nieuwe pagina toegevoegd</div>
         
       </td>
     </tr>
   
     
     <tr class="error">
-      <td>Weeb-U-Rus</td>
-      <td><a href="https://weeb-u-rus.nl/" target="_blank" rel="noopener">https://weeb-u-rus.nl/</a></td>
+      <td>TCG Company</td>
+      <td><a href="https://tcgcompany.nl/pokemon-booster-box/" target="_blank" rel="noopener">https://tcgcompany.nl/pokemon-booster-box/</a></td>
       <td>
         
-          <span class="badge b-bad">ERR</span>
+          <span class="badge b-bad">403</span>
         
       </td>
       <td>0</td>
       <td class="changes">
         
-          <div class="real">- fout bij ophalen (HTTPSConnectionPool(host='weeb-u-rus.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='weeb-u-rus.nl', port=443): Failed to resolve 'weeb-u-rus.nl' ([Errno -2] Name or service not known)")))</div>
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="error">
+      <td>TCG Company</td>
+      <td><a href="https://tcgcompany.nl/one-piece/" target="_blank" rel="noopener">https://tcgcompany.nl/one-piece/</a></td>
+      <td>
+        
+          <span class="badge b-bad">403</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="changed">
+      <td>De Broergrot</td>
+      <td><a href="https://www.debroergrot.nl/" target="_blank" rel="noopener">https://www.debroergrot.nl/</a></td>
+      <td>
+        
+          <span class="badge b-good">200</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="changed">
+      <td>TCG Cards</td>
+      <td><a href="https://www.tcg-cards.nl/" target="_blank" rel="noopener">TCG Cards - De beste online Pokémon TCG webshop van Nederland!</a></td>
+      <td>
+        
+          <span class="badge b-good">200</span>
+        
+      </td>
+      <td>22</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="changed">
+      <td>BES Cards</td>
+      <td><a href="https://www.bescards.com/pokemon-booster-box/" target="_blank" rel="noopener">https://www.bescards.com/pokemon-booster-box/</a></td>
+      <td>
+        
+          <span class="badge b-good">200</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="changed">
+      <td>PKM Winkel</td>
+      <td><a href="https://www.pkmwinkel.nl/collections/booster-box" target="_blank" rel="noopener">https://www.pkmwinkel.nl/collections/booster-box</a></td>
+      <td>
+        
+          <span class="badge b-good">200</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="changed">
+      <td>TCG Reus</td>
+      <td><a href="https://www.tcgreus.nl/" target="_blank" rel="noopener">https://www.tcgreus.nl/</a></td>
+      <td>
+        
+          <span class="badge b-good">200</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="changed">
+      <td>TCG Japan</td>
+      <td><a href="https://tcgjapan.nl/nl/" target="_blank" rel="noopener">https://tcgjapan.nl/nl/</a></td>
+      <td>
+        
+          <span class="badge b-good">200</span>
+        
+      </td>
+      <td>0</td>
+      <td class="changes">
+        
+          <div class="real">- nieuwe pagina toegevoegd</div>
         
       </td>
     </tr>
@@ -273,172 +444,60 @@
 </table>
 
 
-<h2>NL webshops</h2>
+<h2>Snel openen (Cloudflare-shops)</h2>
+<p class="lead">Deze shops blokkeren GitHub Actions IPs. Klik door om handmatig
+te checken - dat is meestal Bol, MediaMarkt en de officiele Pokemon shop.</p>
 
 
-<table>
-  <thead>
-    <tr>
-      <th>Shop</th><th>Pagina</th><th>Status</th><th>Items (~)</th><th>Wijzigingen</th>
-    </tr>
-  </thead>
-  <tbody>
-  
+<div class="grid">
+
+  <div class="card">
+    <div class="name">Intertoys</div>
+    <div class="meta">Cloudflare-zwaar; klik-link i.p.v. monitoren.</div>
+    <div class="meta" style="margin-top:8px;">
     
-    <tr class="error">
-      <td>12kingdoms</td>
-      <td><a href="https://12kingdoms.nl/c-7301773/pokemon/" target="_blank" rel="noopener">https://12kingdoms.nl/c-7301773/pokemon/</a></td>
-      <td>
-        
-          <span class="badge b-bad">ERR</span>
-        
-      </td>
-      <td>0</td>
-      <td class="changes">
-        
-          <div class="real">- fout bij ophalen (HTTPSConnectionPool(host='12kingdoms.nl', port=443): Max retries exceeded with url: /c-7301773/pokemon/ (Caused by NameResolutionError("HTTPSConnection(host='12kingdoms.nl', port=443): Failed to resolve '12kingdoms.nl' ([Errno -2] Name or service not known)")))</div>
-        
-      </td>
-    </tr>
-  
+      <div>- <a href="https://www.intertoys.nl/zoeken?q=pokemon+booster" target="_blank" rel="noopener">www.intertoys.nl/zoeken?q=pokemon+booster</a></div>
     
-    <tr class="error">
-      <td>12kingdoms</td>
-      <td><a href="https://12kingdoms.nl/c-7311299/one-piece/" target="_blank" rel="noopener">https://12kingdoms.nl/c-7311299/one-piece/</a></td>
-      <td>
-        
-          <span class="badge b-bad">ERR</span>
-        
-      </td>
-      <td>0</td>
-      <td class="changes">
-        
-          <div class="real">- fout bij ophalen (HTTPSConnectionPool(host='12kingdoms.nl', port=443): Max retries exceeded with url: /c-7311299/one-piece/ (Caused by NameResolutionError("HTTPSConnection(host='12kingdoms.nl', port=443): Failed to resolve '12kingdoms.nl' ([Errno -2] Name or service not known)")))</div>
-        
-      </td>
-    </tr>
-  
+      <div>- <a href="https://www.intertoys.nl/zoeken?q=pokemon+elite+trainer" target="_blank" rel="noopener">www.intertoys.nl/zoeken?q=pokemon+elite+trainer</a></div>
     
-    <tr class="error">
-      <td>Hobbyzaken</td>
-      <td><a href="https://www.hobbyzaken.com/pokemon-tcg" target="_blank" rel="noopener">https://www.hobbyzaken.com/pokemon-tcg</a></td>
-      <td>
-        
-          <span class="badge b-bad">ERR</span>
-        
-      </td>
-      <td>0</td>
-      <td class="changes">
-        
-          <div class="real">- fout bij ophalen (HTTPSConnectionPool(host='www.hobbyzaken.com', port=443): Max retries exceeded with url: /pokemon-tcg (Caused by NameResolutionError("HTTPSConnection(host='www.hobbyzaken.com', port=443): Failed to resolve 'www.hobbyzaken.com' ([Errno -2] Name or service not known)")))</div>
-        
-      </td>
-    </tr>
-  
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="name">MediaMarkt</div>
+    <div class="meta">Cloudflare bot management; klik-link i.p.v. monitoren.</div>
+    <div class="meta" style="margin-top:8px;">
     
-    <tr class="error">
-      <td>Hobbyzaken</td>
-      <td><a href="https://www.hobbyzaken.com/one-piece-card-game" target="_blank" rel="noopener">https://www.hobbyzaken.com/one-piece-card-game</a></td>
-      <td>
-        
-          <span class="badge b-bad">ERR</span>
-        
-      </td>
-      <td>0</td>
-      <td class="changes">
-        
-          <div class="real">- fout bij ophalen (HTTPSConnectionPool(host='www.hobbyzaken.com', port=443): Max retries exceeded with url: /one-piece-card-game (Caused by NameResolutionError("HTTPSConnection(host='www.hobbyzaken.com', port=443): Failed to resolve 'www.hobbyzaken.com' ([Errno -2] Name or service not known)")))</div>
-        
-      </td>
-    </tr>
-  
+      <div>- <a href="https://www.mediamarkt.nl/nl/category/pokemon-kaarten-2071.html" target="_blank" rel="noopener">www.mediamarkt.nl/nl/category/pokemon-kaarten-2071.html</a></div>
     
-    <tr class="error">
-      <td>Boltius</td>
-      <td><a href="https://www.boltius.nl/c/pokemon-tcg/" target="_blank" rel="noopener">https://www.boltius.nl/c/pokemon-tcg/</a></td>
-      <td>
-        
-          <span class="badge b-bad">ERR</span>
-        
-      </td>
-      <td>0</td>
-      <td class="changes">
-        
-          <div class="real">- fout bij ophalen (HTTPSConnectionPool(host='www.boltius.nl', port=443): Max retries exceeded with url: /c/pokemon-tcg/ (Caused by NameResolutionError("HTTPSConnection(host='www.boltius.nl', port=443): Failed to resolve 'www.boltius.nl' ([Errno -2] Name or service not known)")))</div>
-        
-      </td>
-    </tr>
-  
+      <div>- <a href="https://www.mediamarkt.nl/nl/search.html?query=one+piece+card+game" target="_blank" rel="noopener">www.mediamarkt.nl/nl/search.html?query=one+piece+card+game</a></div>
     
-    <tr class="error">
-      <td>Boltius</td>
-      <td><a href="https://www.boltius.nl/c/one-piece-card-game/" target="_blank" rel="noopener">https://www.boltius.nl/c/one-piece-card-game/</a></td>
-      <td>
-        
-          <span class="badge b-bad">ERR</span>
-        
-      </td>
-      <td>0</td>
-      <td class="changes">
-        
-          <div class="real">- fout bij ophalen (HTTPSConnectionPool(host='www.boltius.nl', port=443): Max retries exceeded with url: /c/one-piece-card-game/ (Caused by NameResolutionError("HTTPSConnection(host='www.boltius.nl', port=443): Failed to resolve 'www.boltius.nl' ([Errno -2] Name or service not known)")))</div>
-        
-      </td>
-    </tr>
-  
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="name">Pokemoncenter.com (NL)</div>
     
-    <tr class="error">
-      <td>Pokemoncenter.nl</td>
-      <td><a href="https://www.pokemoncenter.com/nl/category/booster-packs" target="_blank" rel="noopener">pokemoncenter.com</a></td>
-      <td>
-        
-          <span class="badge b-bad">403</span>
-        
-      </td>
-      <td>0</td>
-      <td class="changes">
-        
-          <div class="real">- fout bij ophalen (403)</div>
-        
-      </td>
-    </tr>
-  
+    <div class="meta" style="margin-top:8px;">
     
-    <tr class="error">
-      <td>Bol.com</td>
-      <td><a href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+booster+box" target="_blank" rel="noopener">bol</a></td>
-      <td>
-        
-          <span class="badge b-bad">403</span>
-        
-      </td>
-      <td>0</td>
-      <td class="changes">
-        
-          <div class="real">- fout bij ophalen (403)</div>
-        
-      </td>
-    </tr>
-  
+      <div>- <a href="https://www.pokemoncenter.com/nl/category/booster-packs" target="_blank" rel="noopener">www.pokemoncenter.com/nl/category/booster-packs</a></div>
     
-    <tr class="error">
-      <td>Bol.com</td>
-      <td><a href="https://www.bol.com/nl/nl/s/?searchtext=one+piece+card+game+booster" target="_blank" rel="noopener">bol</a></td>
-      <td>
-        
-          <span class="badge b-bad">403</span>
-        
-      </td>
-      <td>0</td>
-      <td class="changes">
-        
-          <div class="real">- fout bij ophalen (403)</div>
-        
-      </td>
-    </tr>
-  
-  </tbody>
-</table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="name">Bol.com</div>
+    
+    <div class="meta" style="margin-top:8px;">
+    
+      <div>- <a href="https://www.bol.com/nl/nl/s/?searchtext=pokemon+booster+box" target="_blank" rel="noopener">www.bol.com/nl/nl/s/?searchtext=pokemon+booster+box</a></div>
+    
+      <div>- <a href="https://www.bol.com/nl/nl/s/?searchtext=one+piece+card+game+booster" target="_blank" rel="noopener">www.bol.com/nl/nl/s/?searchtext=one+piece+card+game+booster</a></div>
+    
+    </div>
+  </div>
+
+</div>
 
 
 <footer style="margin-top:48px; color:var(--muted); font-size:12px;">
