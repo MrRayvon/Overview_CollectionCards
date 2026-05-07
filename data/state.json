@@ -1,6 +1,6 @@
 {
   "https://www.intertoys.nl/zoeken?q=pokemon+booster": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "Intertoys Maastricht",
     "region": "maastricht",
     "games": [
@@ -10,8 +10,8 @@
     "ok": false,
     "status": 403,
     "title": "Errorpagina",
-    "content_hash": "ef27929fe5e365a8",
-    "char_count": 674,
+    "content_hash": "33be8efb4cdd4018",
+    "char_count": 673,
     "price_count": 0,
     "prices": [],
     "error": null,
@@ -20,7 +20,7 @@
     ]
   },
   "https://www.intertoys.nl/zoeken?q=pokemon+elite+trainer": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "Intertoys Maastricht",
     "region": "maastricht",
     "games": [
@@ -30,8 +30,8 @@
     "ok": false,
     "status": 403,
     "title": "Errorpagina",
-    "content_hash": "4459bcdfec052c17",
-    "char_count": 674,
+    "content_hash": "37f886290b826cdb",
+    "char_count": 673,
     "price_count": 0,
     "prices": [],
     "error": null,
@@ -40,7 +40,7 @@
     ]
   },
   "https://www.mediamarkt.nl/nl/search.html?query=pokemon+booster": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "MediaMarkt",
     "region": "maastricht",
     "games": [
@@ -61,7 +61,7 @@
     ]
   },
   "https://www.mediamarkt.nl/nl/search.html?query=one+piece+card+game": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "MediaMarkt",
     "region": "maastricht",
     "games": [
@@ -82,7 +82,7 @@
     ]
   },
   "https://weeb-u-rus.nl/": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "Weeb-U-Rus",
     "region": "maastricht",
     "games": [
@@ -103,7 +103,7 @@
     ]
   },
   "https://12kingdoms.nl/c-7301773/pokemon/": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "12kingdoms",
     "region": "nl-online",
     "games": [
@@ -124,7 +124,7 @@
     ]
   },
   "https://12kingdoms.nl/c-7311299/one-piece/": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "12kingdoms",
     "region": "nl-online",
     "games": [
@@ -145,7 +145,7 @@
     ]
   },
   "https://www.hobbyzaken.com/pokemon-tcg": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "Hobbyzaken",
     "region": "nl-online",
     "games": [
@@ -166,7 +166,7 @@
     ]
   },
   "https://www.hobbyzaken.com/one-piece-card-game": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "Hobbyzaken",
     "region": "nl-online",
     "games": [
@@ -187,7 +187,7 @@
     ]
   },
   "https://www.boltius.nl/c/pokemon-tcg/": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "Boltius",
     "region": "nl-online",
     "games": [
@@ -208,7 +208,7 @@
     ]
   },
   "https://www.boltius.nl/c/one-piece-card-game/": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "Boltius",
     "region": "nl-online",
     "games": [
@@ -229,27 +229,27 @@
     ]
   },
   "https://www.pokemoncenter.com/nl/category/booster-packs": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "Pokemoncenter.nl",
     "region": "nl-online",
     "games": [
       "pokemon"
     ],
     "url": "https://www.pokemoncenter.com/nl/category/booster-packs",
-    "ok": true,
-    "status": 200,
-    "title": "",
-    "content_hash": "e3b0c44298fc1c14",
-    "char_count": 0,
+    "ok": false,
+    "status": 403,
+    "title": "pokemoncenter.com",
+    "content_hash": "0978aa497e24e7c4",
+    "char_count": 61,
     "price_count": 0,
     "prices": [],
     "error": null,
     "changes": [
-      "inhoud gewijzigd"
+      "fout bij ophalen (403)"
     ]
   },
   "https://www.bol.com/nl/nl/s/?searchtext=pokemon+booster+box": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "Bol.com",
     "region": "nl-online",
     "games": [
@@ -260,8 +260,8 @@
     "ok": false,
     "status": 403,
     "title": "bol",
-    "content_hash": "90fe49f2c6557560",
-    "char_count": 1203,
+    "content_hash": "1bed85ca042a5eb4",
+    "char_count": 1201,
     "price_count": 0,
     "prices": [],
     "error": null,
@@ -270,7 +270,7 @@
     ]
   },
   "https://www.bol.com/nl/nl/s/?searchtext=one+piece+card+game+booster": {
-    "ts": "2026-05-07T15:12:45+00:00",
+    "ts": "2026-05-07T17:16:19+00:00",
     "shop": "Bol.com",
     "region": "nl-online",
     "games": [
@@ -281,8 +281,8 @@
     "ok": false,
     "status": 403,
     "title": "bol",
-    "content_hash": "415ddf1697722e1a",
-    "char_count": 1202,
+    "content_hash": "ac6d59e2c26decf6",
+    "char_count": 1201,
     "price_count": 0,
     "prices": [],
     "error": null,
