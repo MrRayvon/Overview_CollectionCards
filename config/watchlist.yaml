@@ -1,0 +1,69 @@
+# Watchlist: wat tracken we voor prijs-trends?
+#
+# pokemon_sets:
+#   Pokemon TCG API set-IDs die we volgen voor losse-kaart prijzen
+#   (Cardmarket trendPrice + averageSellPrice).
+#   Laat 'ids' leeg om automatisch de laatste N sets uit de API te pakken.
+#
+# sealed_products:
+#   Specifieke product-URLs. Voor elke URL pakt het script de meest
+#   waarschijnlijke "hoofdprijs" en houdt die over tijd bij.
+#     type: retail      -> normale webshop product
+#     type: secondhand  -> Marktplaats / Vinted zoekpagina (laagste prijs)
+
+pokemon_sets:
+  latest_n: 5             # automatisch top-5 nieuwste sets pakken
+  ids: []                 # of expliciet: ["sv8pt5", "sv9", "sv10"]
+
+sealed_products:
+  # ===== retail (NL TCG shops) =====
+  - name: "Prismatic Evolutions Booster Bundle"
+    type: retail
+    shop: CatchYourCards
+    url: "https://catchyourcards.nl/pokemonprismaticevolutionsboosterbundle/"
+
+  - name: "Journey Together Booster Box"
+    type: retail
+    shop: CatchYourCards
+    url: "https://catchyourcards.nl/pokemon-journey-together-36-packs-booster-box/"
+
+  - name: "Mega Evolution Ascended Heroes Booster Bundle"
+    type: retail
+    shop: CatchYourCards
+    url: "https://catchyourcards.nl/71429-pokemon-mega-evolution-ascended-heroes-booster-bundle-new/"
+
+  - name: "One Piece OP15 Booster Box"
+    type: retail
+    shop: CatchYourCards
+    url: "https://catchyourcards.nl/one-piece-op15-booster-box/"
+
+  - name: "One Piece Adventure on Kami's Island OP15 Booster Box"
+    type: retail
+    shop: TCG Company
+    url: "https://tcgcompany.nl/one-piece-adventure-on-kamis-island-op15-booster-box/"
+
+  - name: "One Piece Two Legends OP08 Booster Box"
+    type: retail
+    shop: TCG Company
+    url: "https://tcgcompany.nl/one-piece-two-legends-booster-box-op08/"
+
+  # ===== tweedehands / scalpers (Marktplaats) =====
+  - name: "Prismatic Evolutions Booster Box (Marktplaats)"
+    type: secondhand
+    shop: Marktplaats
+    url: "https://www.marktplaats.nl/q/pokemon+prismatic+evolutions+booster+box/"
+
+  - name: "Pokemon 151 Booster Box (Marktplaats)"
+    type: secondhand
+    shop: Marktplaats
+    url: "https://www.marktplaats.nl/q/pokemon+151+booster+box/"
+
+  - name: "Surging Sparks Booster Box (Marktplaats)"
+    type: secondhand
+    shop: Marktplaats
+    url: "https://www.marktplaats.nl/q/pokemon+surging+sparks+booster+box/"
+
+  - name: "One Piece OP09 Booster Box (Marktplaats)"
+    type: secondhand
+    shop: Marktplaats
+    url: "https://www.marktplaats.nl/q/one+piece+op09+booster+box/"
