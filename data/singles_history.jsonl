@@ -5158,3 +5158,175 @@
 {"ts": "2026-05-10T21:12:45+00:00", "id": "rsv10pt5-170", "name": "Bouffalant ex", "set_id": "rsv10pt5", "rarity": "Special Illustration Rare", "price_eur": 14.79}
 {"ts": "2026-05-10T21:12:45+00:00", "id": "rsv10pt5-171", "name": "Hilda", "set_id": "rsv10pt5", "rarity": "Special Illustration Rare", "price_eur": 31.83}
 {"ts": "2026-05-10T21:12:45+00:00", "id": "rsv10pt5-173", "name": "Reshiram ex", "set_id": "rsv10pt5", "rarity": "Black White Rare", "price_eur": 269.65}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-1", "name": "Sewaddle", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-2", "name": "Swadloon", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-3", "name": "Leavanny", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-4", "name": "Cottonee", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.02}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-5", "name": "Whimsicott ex", "set_id": "rsv10pt5", "rarity": "Double Rare", "price_eur": 0.35}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-6", "name": "Deerling", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-7", "name": "Sawsbuck", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-8", "name": "Shelmet", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-9", "name": "Accelgor", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-10", "name": "Virizion", "set_id": "rsv10pt5", "rarity": "Rare", "price_eur": 0.06}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-11", "name": "Tepig", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-12", "name": "Pignite", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-13", "name": "Emboar", "set_id": "rsv10pt5", "rarity": "Rare", "price_eur": 0.06}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-14", "name": "Pansear", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.02}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-15", "name": "Simisear", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-16", "name": "Litwick", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-17", "name": "Lampent", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.02}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-18", "name": "Chandelure", "set_id": "rsv10pt5", "rarity": "Rare", "price_eur": 0.07}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-19", "name": "Heatmor", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-20", "name": "Reshiram ex", "set_id": "rsv10pt5", "rarity": "Double Rare", "price_eur": 0.47}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-21", "name": "Oshawott", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-22", "name": "Dewott", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-23", "name": "Samurott", "set_id": "rsv10pt5", "rarity": "Rare", "price_eur": 0.1}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-24", "name": "Basculin", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-28", "name": "Vanillish", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-27", "name": "Vanillite", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-31", "name": "Blitzle", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-26", "name": "Swanna", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-25", "name": "Ducklett", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-29", "name": "Vanilluxe", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-32", "name": "Zebstrika", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-30", "name": "Keldeo ex", "set_id": "rsv10pt5", "rarity": "Double Rare", "price_eur": 0.36}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-33", "name": "Joltik", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.08}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-34", "name": "Galvantula", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-35", "name": "Stunfisk", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.02}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-36", "name": "Woobat", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.02}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-37", "name": "Swoobat", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-38", "name": "Sigilyph", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.02}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-39", "name": "Yamask", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-40", "name": "Cofagrigus", "set_id": "rsv10pt5", "rarity": "Rare", "price_eur": 0.05}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-41", "name": "Gothita", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-42", "name": "Gothorita", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-43", "name": "Gothitelle", "set_id": "rsv10pt5", "rarity": "Rare", "price_eur": 0.05}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-44", "name": "Frillish", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.09}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-45", "name": "Jellicent ex", "set_id": "rsv10pt5", "rarity": "Double Rare", "price_eur": 0.46}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-46", "name": "Roggenrola", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-47", "name": "Boldore", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-48", "name": "Gigalith", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.06}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-49", "name": "Sawk", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-50", "name": "Archen", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-51", "name": "Archeops", "set_id": "rsv10pt5", "rarity": "Rare", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-56", "name": "Liepard", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-72", "name": "Patrat", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.02}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-57", "name": "Scraggy", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-54", "name": "Terrakion", "set_id": "rsv10pt5", "rarity": "Rare", "price_eur": 0.06}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-61", "name": "Zorua", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-63", "name": "Vullaby", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-64", "name": "Mandibuzz", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-67", "name": "Hydreigon ex", "set_id": "rsv10pt5", "rarity": "Double Rare", "price_eur": 0.35}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-73", "name": "Watchog", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-59", "name": "Trubbish", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-60", "name": "Garbodor", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.02}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-71", "name": "Druddigon", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-68", "name": "Ferroseed", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.05}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-70", "name": "Durant", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-58", "name": "Scrafty", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-52", "name": "Mienfoo", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-53", "name": "Mienshao", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-69", "name": "Ferrothorn", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.02}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-55", "name": "Purrloin", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-62", "name": "Zoroark", "set_id": "rsv10pt5", "rarity": "Rare", "price_eur": 0.15}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-65", "name": "Deino", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-66", "name": "Zweilous", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-75", "name": "Herdier", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-74", "name": "Lillipup", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-77", "name": "Bouffalant ex", "set_id": "rsv10pt5", "rarity": "Double Rare", "price_eur": 0.36}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-78", "name": "Tornadus", "set_id": "rsv10pt5", "rarity": "Rare", "price_eur": 0.08}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-82", "name": "Energy Retrieval", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.08}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-83", "name": "Harlequin", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-98", "name": "Emboar", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 24.23}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-100", "name": "Simisear", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 7.44}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-102", "name": "Lampent", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 6.88}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-107", "name": "Samurott", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 29.75}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-109", "name": "Ducklett", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 8.02}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-113", "name": "Vanilluxe", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 15.89}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-114", "name": "Blitzle", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 6.07}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-115", "name": "Zebstrika", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 15.75}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-87", "name": "Sewaddle", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 7.39}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-89", "name": "Leavanny", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 13.66}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-90", "name": "Cottonee", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.22}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-91", "name": "Deerling", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 9.23}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-99", "name": "Pansear", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 6.86}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-105", "name": "Oshawott", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 24.34}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-128", "name": "Boldore", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 4.89}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-130", "name": "Sawk", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.96}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-80", "name": "Brave Bangle", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.17}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-81", "name": "Cheren", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.08}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-86", "name": "Ignition Energy", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.17}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-95", "name": "Virizion", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 17.85}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-110", "name": "Swanna", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 7.13}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-116", "name": "Joltik", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 9.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-129", "name": "Gigalith", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 15.57}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-84", "name": "Hilda", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 1.06}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-85", "name": "Tool Scrapper", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.13}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-93", "name": "Shelmet", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 3.89}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-104", "name": "Heatmor", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-108", "name": "Basculin", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 4.34}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-122", "name": "Yamask", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.09}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-125", "name": "Gothorita", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 6.56}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-79", "name": "Antique Plume Fossil", "set_id": "rsv10pt5", "rarity": "Common", "price_eur": 0.03}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-88", "name": "Swadloon", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.6}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-94", "name": "Accelgor", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 9.51}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-97", "name": "Pignite", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 6.58}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-103", "name": "Chandelure", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 25.19}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-106", "name": "Dewott", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 8.47}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-126", "name": "Frillish", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 7.88}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-101", "name": "Litwick", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 7.07}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-111", "name": "Vanillite", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 6.66}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-127", "name": "Roggenrola", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.15}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-76", "name": "Stoutland", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 0.02}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-92", "name": "Sawsbuck", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 13.21}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-112", "name": "Vanillish", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.65}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-117", "name": "Galvantula", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 11.16}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-118", "name": "Stunfisk", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 3.92}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-120", "name": "Swoobat", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.81}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-123", "name": "Cofagrigus", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 12.21}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-96", "name": "Tepig", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 14.56}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-119", "name": "Woobat", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 6.1}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-121", "name": "Sigilyph", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 4.48}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-124", "name": "Gothita", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 8.31}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-131", "name": "Archen", "set_id": "rsv10pt5", "rarity": "Uncommon", "price_eur": 4.58}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-134", "name": "Mienshao", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.59}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-132", "name": "Archeops", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.93}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-133", "name": "Mienfoo", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 6.47}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-135", "name": "Terrakion", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 14.46}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-136", "name": "Purrloin", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 7.39}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-137", "name": "Liepard", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 21.8}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-138", "name": "Scraggy", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 7.07}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-139", "name": "Scrafty", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 9.15}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-140", "name": "Trubbish", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.18}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-142", "name": "Zorua", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 16.31}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-151", "name": "Druddigon", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 9.16}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-143", "name": "Zoroark", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 40.61}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-150", "name": "Durant", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.36}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-153", "name": "Watchog", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 4.73}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-155", "name": "Herdier", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 6.16}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-162", "name": "Bouffalant ex", "set_id": "rsv10pt5", "rarity": "Ultra Rare", "price_eur": 0.9}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-145", "name": "Mandibuzz", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.84}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-148", "name": "Ferroseed", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 4.13}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-154", "name": "Lillipup", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 8.97}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-156", "name": "Stoutland", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 16.28}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-159", "name": "Keldeo ex", "set_id": "rsv10pt5", "rarity": "Ultra Rare", "price_eur": 1.24}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-144", "name": "Vullaby", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.1}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-149", "name": "Ferrothorn", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 11.49}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-158", "name": "Reshiram ex", "set_id": "rsv10pt5", "rarity": "Ultra Rare", "price_eur": 2.67}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-161", "name": "Hydreigon ex", "set_id": "rsv10pt5", "rarity": "Ultra Rare", "price_eur": 1.04}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-141", "name": "Garbodor", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 9.64}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-146", "name": "Deino", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 9.11}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-152", "name": "Patrat", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.45}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-157", "name": "Whimsicott ex", "set_id": "rsv10pt5", "rarity": "Ultra Rare", "price_eur": 0.9}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-160", "name": "Jellicent ex", "set_id": "rsv10pt5", "rarity": "Ultra Rare", "price_eur": 1.07}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-147", "name": "Zweilous", "set_id": "rsv10pt5", "rarity": "Illustration Rare", "price_eur": 5.4}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-165", "name": "Whimsicott ex", "set_id": "rsv10pt5", "rarity": "Special Illustration Rare", "price_eur": 18.59}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-163", "name": "Harlequin", "set_id": "rsv10pt5", "rarity": "Ultra Rare", "price_eur": 0.92}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-164", "name": "Hilda", "set_id": "rsv10pt5", "rarity": "Ultra Rare", "price_eur": 5.54}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-167", "name": "Keldeo ex", "set_id": "rsv10pt5", "rarity": "Special Illustration Rare", "price_eur": 41.9}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-166", "name": "Reshiram ex", "set_id": "rsv10pt5", "rarity": "Special Illustration Rare", "price_eur": 146.18}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-169", "name": "Hydreigon ex", "set_id": "rsv10pt5", "rarity": "Special Illustration Rare", "price_eur": 61.63}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-168", "name": "Jellicent ex", "set_id": "rsv10pt5", "rarity": "Special Illustration Rare", "price_eur": 22.6}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-170", "name": "Bouffalant ex", "set_id": "rsv10pt5", "rarity": "Special Illustration Rare", "price_eur": 14.79}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-171", "name": "Hilda", "set_id": "rsv10pt5", "rarity": "Special Illustration Rare", "price_eur": 31.83}
+{"ts": "2026-05-10T22:10:06+00:00", "id": "rsv10pt5-173", "name": "Reshiram ex", "set_id": "rsv10pt5", "rarity": "Black White Rare", "price_eur": 269.65}
