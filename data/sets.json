@@ -1,18 +1,5 @@
 {
-  "checked_at": "2026-06-10T23:07:48+00:00",
-  "pokemon_ids": [
-    "me1",
-    "me2",
-    "me2pt5",
-    "me3",
-    "me4",
-    "rsv10pt5",
-    "sv10",
-    "sv7",
-    "sv8",
-    "sv8pt5",
-    "sv9",
-    "zsv10pt5"
-  ],
+  "checked_at": "2026-06-11T02:00:08+00:00",
+  "pokemon_ids": [],
   "onepiece_ids": []
 }
