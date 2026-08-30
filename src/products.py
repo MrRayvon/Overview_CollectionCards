@@ -14,6 +14,7 @@ from typing import Optional
 from bs4 import BeautifulSoup
 import requests
 
+from . import stock as stock_mod
 from .scrapers.webshop import BROWSER_HEADERS, _try_cloudscraper
 
 PRICE_RE = re.compile(r"€\s?(\d{1,4})(?:[.,](\d{2}))?")
@@ -30,6 +31,9 @@ class ProductSnap:
     status: int
     price_eur: Optional[float]
     secondary_prices: list   # alle gevonden prijzen op de pagina (sorted)
+    stock_status: str = "unknown"    # in_stock / preorder / backorder / out_of_stock / unknown
+    stock_source: str = "none"       # jsonld / microdata / meta / text / none
+    stock_signal: Optional[str] = None
     error: Optional[str] = None
 
     def to_dict(self) -> dict:
@@ -93,7 +97,7 @@ def _fetch(url: str, timeout: int = 25) -> tuple[int, str, Optional[str]]:
 def snap_retail(name: str, shop: str, url: str) -> ProductSnap:
     status, html, err = _fetch(url)
     if not html:
-        return ProductSnap(name, "retail", shop, url, False, status, None, [], err)
+        return ProductSnap(name, "retail", shop, url, False, status, None, [], error=err)
     structured = _structured_price(html)
     all_p = sorted(set(_all_prices(html)))
     if structured is not None:
@@ -101,19 +105,28 @@ def snap_retail(name: str, shop: str, url: str) -> ProductSnap:
     else:
         plausible = [p for p in all_p if 5.0 <= p <= 2000.0]
         primary = plausible[0] if plausible else (all_p[0] if all_p else None)
+    st = stock_mod.detect(html)
     return ProductSnap(name, "retail", shop, url, status == 200, status,
-                       primary, all_p, err)
+                       primary, all_p,
+                       stock_status=st["status"], stock_source=st["source"],
+                       stock_signal=st["signal"], error=err)
 
 
 def snap_secondhand(name: str, shop: str, url: str) -> ProductSnap:
     status, html, err = _fetch(url)
     if not html:
-        return ProductSnap(name, "secondhand", shop, url, False, status, None, [], err)
+        return ProductSnap(name, "secondhand", shop, url, False, status, None, [], error=err)
     all_p = sorted(set(_all_prices(html)))
     plausible = [p for p in all_p if 10.0 <= p <= 5000.0]  # filter losse kaartprijsjes
     primary = plausible[0] if plausible else None  # laagste = scalper-bodem
+    # Voor Marktplaats-zoekpagina's is er altijd 'aanbod' als er hits zijn;
+    # geef 'in_stock' terug als er plausibele prijzen zijn, anders 'out_of_stock'.
+    st_status = "in_stock" if plausible else "out_of_stock"
     return ProductSnap(name, "secondhand", shop, url, status == 200, status,
-                       primary, plausible, err)
+                       primary, plausible,
+                       stock_status=st_status, stock_source="text",
+                       stock_signal=f"{len(plausible)} aanbiedingen",
+                       error=err)
 
 
 def snap(spec: dict) -> ProductSnap:

@@ -153,6 +153,17 @@ def run_singles_prices(watchlist: dict, now: str):
     return diffed, gainers, losers
 
 
+def _stock_transition(prev: str | None, now: str) -> str | None:
+    """'restocked' als out_of_stock -> in_stock, 'sold_out' als omgekeerd."""
+    if prev == "out_of_stock" and now == "in_stock":
+        return "restocked"
+    if prev == "in_stock" and now == "out_of_stock":
+        return "sold_out"
+    if prev is None and now == "in_stock":
+        return "first_seen_in_stock"
+    return None
+
+
 def run_products(watchlist: dict, now: str):
     specs = watchlist.get("sealed_products") or []
     if not specs:
@@ -164,18 +175,37 @@ def run_products(watchlist: dict, now: str):
         snaps.append(products.snap(spec).to_dict())
         time.sleep(1)
     diffed = movers.diff_products(old, snaps)
-    new_state = {
-        s["url"]: {"price_eur": s["price_eur"], "ts": now}
-        for s in snaps if s.get("price_eur") is not None
-    }
-    # Behoud ook URLs die deze run gefaald zijn maar wel een vorige prijs hadden
+
+    # Verrijk met voorraad-transitie
+    for s in diffed:
+        prev_stock = (old.get(s["url"]) or {}).get("stock_status")
+        s["prev_stock_status"] = prev_stock
+        s["stock_transition"] = _stock_transition(prev_stock, s.get("stock_status") or "unknown")
+
+    new_state: dict = {}
+    for s in snaps:
+        entry = {
+            "ts": now,
+            "stock_status": s.get("stock_status"),
+            "stock_source": s.get("stock_source"),
+        }
+        if s.get("price_eur") is not None:
+            entry["price_eur"] = s["price_eur"]
+        else:
+            # Behoud vorige prijs zodat we die niet verliezen bij een fetchfout
+            prev_price = (old.get(s["url"]) or {}).get("price_eur")
+            if prev_price is not None:
+                entry["price_eur"] = prev_price
+        new_state[s["url"]] = entry
+    # Behoud ook URLs die deze run niet zijn gescrapt (config wijzigingen)
     for url, prev in old.items():
-        if url not in new_state and prev:
-            new_state[url] = prev
+        new_state.setdefault(url, prev)
     _save_json(PRODUCTS_STATE, new_state)
+
     _append_jsonl(PRODUCTS_HIST, [
         {"ts": now, "url": s["url"], "name": s["name"], "type": s["type"],
-         "shop": s.get("shop"), "price_eur": s.get("price_eur")}
+         "shop": s.get("shop"), "price_eur": s.get("price_eur"),
+         "stock_status": s.get("stock_status"), "stock_source": s.get("stock_source")}
         for s in snaps
     ])
     return diffed

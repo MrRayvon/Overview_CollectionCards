@@ -29,6 +29,28 @@ def _pct_class(v):
     return ""
 
 
+STOCK_LABEL = {
+    "in_stock": ("Op voorraad", "b-good"),
+    "preorder": ("Pre-order", "b-info"),
+    "backorder": ("Op bestelling", "b-warn"),
+    "out_of_stock": ("Uitverkocht", "b-bad"),
+    "unknown": ("Onbekend", "b-warn"),
+}
+
+
+def _stock_badge(status):
+    label, cls = STOCK_LABEL.get(status or "unknown", STOCK_LABEL["unknown"])
+    return f'<span class="badge {cls}">{label}</span>'
+
+
+def _transition_badge(t):
+    if t == "restocked":
+        return '<span class="badge b-good">NET BINNEN</span>'
+    if t == "sold_out":
+        return '<span class="badge b-bad">JUIST UITVERKOCHT</span>'
+    return ""
+
+
 SHOP_TABLE_TEMPLATE = Template("""
 {% if rows %}
 <table>
@@ -109,20 +131,25 @@ PRODUCTS_TABLE_TEMPLATE = Template("""
 {% if rows %}
 <table>
   <thead><tr>
-    <th>Product</th><th>Shop</th><th>Type</th>
-    <th>Vorig</th><th>Nu</th><th>%</th><th>Status</th>
+    <th>Product</th><th>Shop</th>
+    <th>Voorraad</th>
+    <th>Vorig</th><th>Nu</th><th>%</th><th>HTTP</th>
   </tr></thead>
   <tbody>
   {% for r in rows %}
-    <tr class="{% if not r.ok %}error{% endif %}">
-      <td><a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.name }}</a></td>
+    {% set tr = r.stock_transition %}
+    <tr class="{% if not r.ok %}error{% elif tr == 'restocked' %}restock{% endif %}">
+      <td>
+        <a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.name }}</a>
+        {% if tr %} {{ transition_badge(tr)|safe }}{% endif %}
+      </td>
       <td>{{ r.shop }}</td>
-      <td><span class="badge {% if r.type == 'secondhand' %}b-warn{% else %}b-info{% endif %}">{{ r.type }}</span></td>
+      <td>{{ stock_badge(r.stock_status)|safe }}</td>
       <td>{{ fmt_eur(r.prev_price_eur) }}</td>
       <td><b>{{ fmt_eur(r.price_eur) }}</b></td>
       <td class="{{ pct_class(r.pct_change) }}">{{ fmt_pct(r.pct_change) }}</td>
       <td>
-        {% if r.ok %}<span class="badge b-good">OK</span>
+        {% if r.ok %}<span class="badge b-good">{{ r.status }}</span>
         {% else %}<span class="badge b-bad">{{ r.status or "ERR" }}</span>{% endif %}
       </td>
     </tr>
@@ -131,6 +158,40 @@ PRODUCTS_TABLE_TEMPLATE = Template("""
 </table>
 {% else %}
 <p class="empty">Nog geen producten geconfigureerd.</p>
+{% endif %}
+""")
+
+
+STOCK_ALERTS_TEMPLATE = Template("""
+{% set restocked = rows|selectattr("stock_transition","equalto","restocked")|list %}
+{% set soldout = rows|selectattr("stock_transition","equalto","sold_out")|list %}
+{% set in_stock = rows|selectattr("stock_status","equalto","in_stock")|list %}
+{% set out_stock = rows|selectattr("stock_status","equalto","out_of_stock")|list %}
+
+<div class="stock-summary">
+  <div class="stat"><span class="num">{{ in_stock|length }}</span> op voorraad</div>
+  <div class="stat"><span class="num">{{ out_stock|length }}</span> uitverkocht</div>
+  <div class="stat"><span class="num">{{ restocked|length }}</span> net binnen</div>
+  <div class="stat"><span class="num">{{ soldout|length }}</span> juist weg</div>
+</div>
+
+{% if restocked or soldout %}
+<div class="alerts">
+  {% for r in restocked %}
+    <div class="alert alert-good">
+      <span class="badge b-good">NET BINNEN</span>
+      <a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.name }}</a>
+      <span class="meta-inline">bij {{ r.shop }}, nu {{ fmt_eur(r.price_eur) }}</span>
+    </div>
+  {% endfor %}
+  {% for r in soldout %}
+    <div class="alert alert-bad">
+      <span class="badge b-bad">JUIST UITVERKOCHT</span>
+      <a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.name }}</a>
+      <span class="meta-inline">bij {{ r.shop }}</span>
+    </div>
+  {% endfor %}
+</div>
 {% endif %}
 """)
 
@@ -185,6 +246,14 @@ TEMPLATE = Template("""<!doctype html>
   .lead { color: var(--muted); font-size: 13px; margin: 4px 0 12px; }
   .twocol { display:grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   @media (max-width: 800px) { .twocol { grid-template-columns: 1fr; } }
+  tr.restock { background: rgba(34,197,94,0.10); }
+  .stock-summary { display:flex; gap:16px; flex-wrap:wrap; margin: 8px 0 16px; }
+  .stock-summary .stat { background: var(--panel); border:1px solid var(--border); border-radius:8px; padding:10px 14px; font-size:13px; color:var(--muted); }
+  .stock-summary .stat .num { color: var(--fg); font-weight: 700; font-size: 20px; margin-right: 6px; }
+  .alerts { display:flex; flex-direction: column; gap:6px; margin-bottom: 12px; }
+  .alert { padding: 8px 12px; border-radius: 6px; font-size: 13px; }
+  .alert-good { background: rgba(34,197,94,0.10); border-left: 3px solid var(--good); }
+  .alert-bad { background: rgba(239,68,68,0.10); border-left: 3px solid var(--bad); }
 </style>
 </head>
 <body>
@@ -193,6 +262,7 @@ TEMPLATE = Template("""<!doctype html>
   <div class="meta">Laatst bijgewerkt: {{ generated_at }}</div>
 </header>
 <nav class="toc">
+  <a href="#voorraad">Voorraad</a>
   <a href="#prijs-singles">Singles trends</a>
   <a href="#prijs-sealed">Sealed prijzen</a>
   <a href="#sets">Set releases</a>
@@ -201,6 +271,11 @@ TEMPLATE = Template("""<!doctype html>
   <a href="#quick">Snel openen</a>
 </nav>
 <main>
+
+<h2 id="voorraad">Voorraad status</h2>
+<p class="lead">Per product: is het te koop, uitverkocht, of pre-order?
+"NET BINNEN" = het was uitverkocht en is nu weer beschikbaar (dit is je koopsignaal).</p>
+{{ stock_alerts_block(product_diffs) }}
 
 <h2 id="prijs-singles">Singles - prijs trends (Cardmarket via Pokemon TCG API)</h2>
 <p class="lead">{{ singles_total }} kaarten gevolgd in je watchlist. Vergelijking met vorige run.</p>
@@ -303,7 +378,14 @@ def _movers_table(rows):
 
 
 def _products_table(rows):
-    return PRODUCTS_TABLE_TEMPLATE.render(rows=rows, fmt_eur=_fmt_eur, fmt_pct=_fmt_pct, pct_class=_pct_class)
+    return PRODUCTS_TABLE_TEMPLATE.render(
+        rows=rows, fmt_eur=_fmt_eur, fmt_pct=_fmt_pct, pct_class=_pct_class,
+        stock_badge=_stock_badge, transition_badge=_transition_badge,
+    )
+
+
+def _stock_alerts_block(rows):
+    return STOCK_ALERTS_TEMPLATE.render(rows=rows, fmt_eur=_fmt_eur)
 
 
 TEMPLATE.globals.update({
@@ -311,6 +393,7 @@ TEMPLATE.globals.update({
     "quick_links_block": _quick_links_block,
     "movers_table": _movers_table,
     "products_table": _products_table,
+    "stock_alerts_block": _stock_alerts_block,
 })
 
 
