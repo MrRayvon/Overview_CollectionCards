@@ -1,30 +1,59 @@
 {
-  "https://www.marktplaats.nl/q/pokemon+prismatic+evolutions+booster+box/": {
-    "price_eur": 30.0,
-    "ts": "2026-08-30T17:40:59+00:00"
-  },
-  "https://www.marktplaats.nl/q/pokemon+151+booster+box/": {
-    "price_eur": 30.0,
-    "ts": "2026-08-30T17:40:59+00:00"
-  },
-  "https://www.marktplaats.nl/q/pokemon+surging+sparks+booster+box/": {
-    "price_eur": 69.95,
-    "ts": "2026-08-30T17:40:59+00:00"
-  },
-  "https://www.marktplaats.nl/q/one+piece+op09+booster+box/": {
-    "price_eur": 14.0,
-    "ts": "2026-08-30T17:40:59+00:00"
-  },
-  "https://catchyourcards.nl/71429-pokemon-mega-evolution-ascended-heroes-booster-bundle-new/": {
-    "price_eur": 44.95,
-    "ts": "2026-08-24T19:54:46+00:00"
+  "https://catchyourcards.nl/pokemonprismaticevolutionsboosterbundle/": {
+    "ts": "2026-08-30T19:31:58+00:00",
+    "stock_status": "unknown",
+    "stock_source": "none",
+    "price_eur": 69.95
   },
   "https://catchyourcards.nl/pokemon-journey-together-36-packs-booster-box/": {
-    "price_eur": 189.95,
-    "ts": "2026-08-23T17:45:38+00:00"
+    "ts": "2026-08-30T19:31:58+00:00",
+    "stock_status": "unknown",
+    "stock_source": "none",
+    "price_eur": 189.95
   },
-  "https://catchyourcards.nl/pokemonprismaticevolutionsboosterbundle/": {
-    "price_eur": 69.95,
-    "ts": "2026-06-04T10:47:23+00:00"
+  "https://catchyourcards.nl/71429-pokemon-mega-evolution-ascended-heroes-booster-bundle-new/": {
+    "ts": "2026-08-30T19:31:58+00:00",
+    "stock_status": "unknown",
+    "stock_source": "none",
+    "price_eur": 44.95
+  },
+  "https://catchyourcards.nl/one-piece-op15-booster-box/": {
+    "ts": "2026-08-30T19:31:58+00:00",
+    "stock_status": "unknown",
+    "stock_source": "none"
+  },
+  "https://tcgcompany.nl/one-piece-adventure-on-kamis-island-op15-booster-box/": {
+    "ts": "2026-08-30T19:31:58+00:00",
+    "stock_status": "unknown",
+    "stock_source": "none"
+  },
+  "https://tcgcompany.nl/one-piece-two-legends-booster-box-op08/": {
+    "ts": "2026-08-30T19:31:58+00:00",
+    "stock_status": "unknown",
+    "stock_source": "none"
+  },
+  "https://www.marktplaats.nl/q/pokemon+prismatic+evolutions+booster+box/": {
+    "ts": "2026-08-30T19:31:58+00:00",
+    "stock_status": "in_stock",
+    "stock_source": "text",
+    "price_eur": 30.0
+  },
+  "https://www.marktplaats.nl/q/pokemon+151+booster+box/": {
+    "ts": "2026-08-30T19:31:58+00:00",
+    "stock_status": "in_stock",
+    "stock_source": "text",
+    "price_eur": 39.0
+  },
+  "https://www.marktplaats.nl/q/pokemon+surging+sparks+booster+box/": {
+    "ts": "2026-08-30T19:31:58+00:00",
+    "stock_status": "in_stock",
+    "stock_source": "text",
+    "price_eur": 69.95
+  },
+  "https://www.marktplaats.nl/q/one+piece+op09+booster+box/": {
+    "ts": "2026-08-30T19:31:58+00:00",
+    "stock_status": "in_stock",
+    "stock_source": "text",
+    "price_eur": 99.99
   }
 }

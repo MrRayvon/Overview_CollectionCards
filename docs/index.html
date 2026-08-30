@@ -48,14 +48,23 @@
   .lead { color: var(--muted); font-size: 13px; margin: 4px 0 12px; }
   .twocol { display:grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   @media (max-width: 800px) { .twocol { grid-template-columns: 1fr; } }
+  tr.restock { background: rgba(34,197,94,0.10); }
+  .stock-summary { display:flex; gap:16px; flex-wrap:wrap; margin: 8px 0 16px; }
+  .stock-summary .stat { background: var(--panel); border:1px solid var(--border); border-radius:8px; padding:10px 14px; font-size:13px; color:var(--muted); }
+  .stock-summary .stat .num { color: var(--fg); font-weight: 700; font-size: 20px; margin-right: 6px; }
+  .alerts { display:flex; flex-direction: column; gap:6px; margin-bottom: 12px; }
+  .alert { padding: 8px 12px; border-radius: 6px; font-size: 13px; }
+  .alert-good { background: rgba(34,197,94,0.10); border-left: 3px solid var(--good); }
+  .alert-bad { background: rgba(239,68,68,0.10); border-left: 3px solid var(--bad); }
 </style>
 </head>
 <body>
 <header>
   <h1>Card Tracker - Pokemon & One Piece (NL)</h1>
-  <div class="meta">Laatst bijgewerkt: 2026-08-30T17:40:59+00:00</div>
+  <div class="meta">Laatst bijgewerkt: 2026-08-30T19:31:58+00:00</div>
 </header>
 <nav class="toc">
+  <a href="#voorraad">Voorraad</a>
   <a href="#prijs-singles">Singles trends</a>
   <a href="#prijs-sealed">Sealed prijzen</a>
   <a href="#sets">Set releases</a>
@@ -64,6 +73,24 @@
   <a href="#quick">Snel openen</a>
 </nav>
 <main>
+
+<h2 id="voorraad">Voorraad status</h2>
+<p class="lead">Per product: is het te koop, uitverkocht, of pre-order?
+"NET BINNEN" = het was uitverkocht en is nu weer beschikbaar (dit is je koopsignaal).</p>
+
+
+
+
+
+
+<div class="stock-summary">
+  <div class="stat"><span class="num">4</span> op voorraad</div>
+  <div class="stat"><span class="num">0</span> uitverkocht</div>
+  <div class="stat"><span class="num">0</span> net binnen</div>
+  <div class="stat"><span class="num">0</span> juist weg</div>
+</div>
+
+
 
 <h2 id="prijs-singles">Singles - prijs trends (Cardmarket via Pokemon TCG API)</h2>
 <p class="lead">0 kaarten gevolgd in je watchlist. Vergelijking met vorige run.</p>
@@ -91,15 +118,20 @@
 
 <table>
   <thead><tr>
-    <th>Product</th><th>Shop</th><th>Type</th>
-    <th>Vorig</th><th>Nu</th><th>%</th><th>Status</th>
+    <th>Product</th><th>Shop</th>
+    <th>Voorraad</th>
+    <th>Vorig</th><th>Nu</th><th>%</th><th>HTTP</th>
   </tr></thead>
   <tbody>
   
+    
     <tr class="error">
-      <td><a href="https://catchyourcards.nl/pokemonprismaticevolutionsboosterbundle/" target="_blank" rel="noopener">Prismatic Evolutions Booster Bundle</a></td>
+      <td>
+        <a href="https://catchyourcards.nl/pokemonprismaticevolutionsboosterbundle/" target="_blank" rel="noopener">Prismatic Evolutions Booster Bundle</a>
+        
+      </td>
       <td>CatchYourCards</td>
-      <td><span class="badge b-info">retail</span></td>
+      <td><span class="badge b-warn">Onbekend</span></td>
       <td>€69,95</td>
       <td><b>-</b></td>
       <td class="">-</td>
@@ -108,10 +140,14 @@
       </td>
     </tr>
   
+    
     <tr class="error">
-      <td><a href="https://catchyourcards.nl/pokemon-journey-together-36-packs-booster-box/" target="_blank" rel="noopener">Journey Together Booster Box</a></td>
+      <td>
+        <a href="https://catchyourcards.nl/pokemon-journey-together-36-packs-booster-box/" target="_blank" rel="noopener">Journey Together Booster Box</a>
+        
+      </td>
       <td>CatchYourCards</td>
-      <td><span class="badge b-info">retail</span></td>
+      <td><span class="badge b-warn">Onbekend</span></td>
       <td>€189,95</td>
       <td><b>-</b></td>
       <td class="">-</td>
@@ -120,10 +156,14 @@
       </td>
     </tr>
   
+    
     <tr class="error">
-      <td><a href="https://catchyourcards.nl/71429-pokemon-mega-evolution-ascended-heroes-booster-bundle-new/" target="_blank" rel="noopener">Mega Evolution Ascended Heroes Booster Bundle</a></td>
+      <td>
+        <a href="https://catchyourcards.nl/71429-pokemon-mega-evolution-ascended-heroes-booster-bundle-new/" target="_blank" rel="noopener">Mega Evolution Ascended Heroes Booster Bundle</a>
+        
+      </td>
       <td>CatchYourCards</td>
-      <td><span class="badge b-info">retail</span></td>
+      <td><span class="badge b-warn">Onbekend</span></td>
       <td>€44,95</td>
       <td><b>-</b></td>
       <td class="">-</td>
@@ -132,10 +172,14 @@
       </td>
     </tr>
   
+    
     <tr class="error">
-      <td><a href="https://catchyourcards.nl/one-piece-op15-booster-box/" target="_blank" rel="noopener">One Piece OP15 Booster Box</a></td>
+      <td>
+        <a href="https://catchyourcards.nl/one-piece-op15-booster-box/" target="_blank" rel="noopener">One Piece OP15 Booster Box</a>
+        
+      </td>
       <td>CatchYourCards</td>
-      <td><span class="badge b-info">retail</span></td>
+      <td><span class="badge b-warn">Onbekend</span></td>
       <td>-</td>
       <td><b>-</b></td>
       <td class="">-</td>
@@ -144,10 +188,14 @@
       </td>
     </tr>
   
+    
     <tr class="error">
-      <td><a href="https://tcgcompany.nl/one-piece-adventure-on-kamis-island-op15-booster-box/" target="_blank" rel="noopener">One Piece Adventure on Kami's Island OP15 Booster Box</a></td>
+      <td>
+        <a href="https://tcgcompany.nl/one-piece-adventure-on-kamis-island-op15-booster-box/" target="_blank" rel="noopener">One Piece Adventure on Kami's Island OP15 Booster Box</a>
+        
+      </td>
       <td>TCG Company</td>
-      <td><span class="badge b-info">retail</span></td>
+      <td><span class="badge b-warn">Onbekend</span></td>
       <td>-</td>
       <td><b>-</b></td>
       <td class="">-</td>
@@ -156,10 +204,14 @@
       </td>
     </tr>
   
+    
     <tr class="error">
-      <td><a href="https://tcgcompany.nl/one-piece-two-legends-booster-box-op08/" target="_blank" rel="noopener">One Piece Two Legends OP08 Booster Box</a></td>
+      <td>
+        <a href="https://tcgcompany.nl/one-piece-two-legends-booster-box-op08/" target="_blank" rel="noopener">One Piece Two Legends OP08 Booster Box</a>
+        
+      </td>
       <td>TCG Company</td>
-      <td><span class="badge b-info">retail</span></td>
+      <td><span class="badge b-warn">Onbekend</span></td>
       <td>-</td>
       <td><b>-</b></td>
       <td class="">-</td>
@@ -178,59 +230,76 @@
 
 <table>
   <thead><tr>
-    <th>Product</th><th>Shop</th><th>Type</th>
-    <th>Vorig</th><th>Nu</th><th>%</th><th>Status</th>
+    <th>Product</th><th>Shop</th>
+    <th>Voorraad</th>
+    <th>Vorig</th><th>Nu</th><th>%</th><th>HTTP</th>
   </tr></thead>
   <tbody>
   
+    
     <tr class="">
-      <td><a href="https://www.marktplaats.nl/q/pokemon+prismatic+evolutions+booster+box/" target="_blank" rel="noopener">Prismatic Evolutions Booster Box (Marktplaats)</a></td>
+      <td>
+        <a href="https://www.marktplaats.nl/q/pokemon+prismatic+evolutions+booster+box/" target="_blank" rel="noopener">Prismatic Evolutions Booster Box (Marktplaats)</a>
+         
+      </td>
       <td>Marktplaats</td>
-      <td><span class="badge b-warn">secondhand</span></td>
+      <td><span class="badge b-good">Op voorraad</span></td>
       <td>€30,00</td>
       <td><b>€30,00</b></td>
       <td class="">+0.0%</td>
       <td>
-        <span class="badge b-good">OK</span>
+        <span class="badge b-good">200</span>
         
       </td>
     </tr>
   
+    
     <tr class="">
-      <td><a href="https://www.marktplaats.nl/q/pokemon+151+booster+box/" target="_blank" rel="noopener">Pokemon 151 Booster Box (Marktplaats)</a></td>
-      <td>Marktplaats</td>
-      <td><span class="badge b-warn">secondhand</span></td>
-      <td>€30,00</td>
-      <td><b>€30,00</b></td>
-      <td class="">+0.0%</td>
       <td>
-        <span class="badge b-good">OK</span>
+        <a href="https://www.marktplaats.nl/q/pokemon+151+booster+box/" target="_blank" rel="noopener">Pokemon 151 Booster Box (Marktplaats)</a>
+         
+      </td>
+      <td>Marktplaats</td>
+      <td><span class="badge b-good">Op voorraad</span></td>
+      <td>€30,00</td>
+      <td><b>€39,00</b></td>
+      <td class="up">+30.0%</td>
+      <td>
+        <span class="badge b-good">200</span>
         
       </td>
     </tr>
   
+    
     <tr class="">
-      <td><a href="https://www.marktplaats.nl/q/pokemon+surging+sparks+booster+box/" target="_blank" rel="noopener">Surging Sparks Booster Box (Marktplaats)</a></td>
+      <td>
+        <a href="https://www.marktplaats.nl/q/pokemon+surging+sparks+booster+box/" target="_blank" rel="noopener">Surging Sparks Booster Box (Marktplaats)</a>
+         
+      </td>
       <td>Marktplaats</td>
-      <td><span class="badge b-warn">secondhand</span></td>
+      <td><span class="badge b-good">Op voorraad</span></td>
       <td>€69,95</td>
       <td><b>€69,95</b></td>
       <td class="">+0.0%</td>
       <td>
-        <span class="badge b-good">OK</span>
+        <span class="badge b-good">200</span>
         
       </td>
     </tr>
   
+    
     <tr class="">
-      <td><a href="https://www.marktplaats.nl/q/one+piece+op09+booster+box/" target="_blank" rel="noopener">One Piece OP09 Booster Box (Marktplaats)</a></td>
-      <td>Marktplaats</td>
-      <td><span class="badge b-warn">secondhand</span></td>
-      <td>€14,00</td>
-      <td><b>€14,00</b></td>
-      <td class="">+0.0%</td>
       <td>
-        <span class="badge b-good">OK</span>
+        <a href="https://www.marktplaats.nl/q/one+piece+op09+booster+box/" target="_blank" rel="noopener">One Piece OP09 Booster Box (Marktplaats)</a>
+         
+      </td>
+      <td>Marktplaats</td>
+      <td><span class="badge b-good">Op voorraad</span></td>
+      <td>€14,00</td>
+      <td><b>€99,99</b></td>
+      <td class="up">+614.2%</td>
+      <td>
+        <span class="badge b-good">200</span>
         
       </td>
     </tr>
