@@ -1,6 +1,6 @@
 {
   "https://weebsrus.com/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "Weebs 'R Us (Maastricht)",
     "region": "maastricht",
     "games": [
@@ -21,7 +21,7 @@
     ]
   },
   "https://weebsrus.nl/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "Weebs 'R Us (Maastricht)",
     "region": "maastricht",
     "games": [
@@ -42,7 +42,7 @@
     ]
   },
   "https://catchyourcards.nl/pokemon/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "CatchYourCards",
     "region": "nl-online",
     "games": [
@@ -63,7 +63,7 @@
     ]
   },
   "https://catchyourcards.nl/pokemon/booster-packs/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "CatchYourCards",
     "region": "nl-online",
     "games": [
@@ -84,7 +84,7 @@
     ]
   },
   "https://catchyourcards.nl/pokemon/booster-bundle/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "CatchYourCards",
     "region": "nl-online",
     "games": [
@@ -105,7 +105,7 @@
     ]
   },
   "https://catchyourcards.nl/onepiece/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "CatchYourCards",
     "region": "nl-online",
     "games": [
@@ -126,7 +126,7 @@
     ]
   },
   "https://tcgcompany.nl/pokemon-booster-box/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "TCG Company",
     "region": "nl-online",
     "games": [
@@ -147,7 +147,7 @@
     ]
   },
   "https://tcgcompany.nl/one-piece/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "TCG Company",
     "region": "nl-online",
     "games": [
@@ -168,7 +168,7 @@
     ]
   },
   "https://www.debroergrot.nl/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "De Broergrot",
     "region": "nl-online",
     "games": [
@@ -178,8 +178,8 @@
     "ok": true,
     "status": 200,
     "title": "",
-    "content_hash": "675b05c57393fe24",
-    "char_count": 89376,
+    "content_hash": "5dd12d35c0491426",
+    "char_count": 93206,
     "price_count": 0,
     "prices": [],
     "error": null,
@@ -188,7 +188,7 @@
     ]
   },
   "https://www.tcg-cards.nl/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "TCG Cards",
     "region": "nl-online",
     "games": [
@@ -231,7 +231,7 @@
     ]
   },
   "https://www.bescards.com/pokemon-booster-box/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "BES Cards",
     "region": "nl-online",
     "games": [
@@ -241,8 +241,8 @@
     "ok": true,
     "status": 200,
     "title": "",
-    "content_hash": "c306cda259689510",
-    "char_count": 56308,
+    "content_hash": "2fc62ee7b79c5529",
+    "char_count": 58146,
     "price_count": 0,
     "prices": [],
     "error": null,
@@ -251,7 +251,7 @@
     ]
   },
   "https://www.pkmwinkel.nl/collections/booster-box": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "PKM Winkel",
     "region": "nl-online",
     "games": [
@@ -261,8 +261,8 @@
     "ok": true,
     "status": 200,
     "title": "",
-    "content_hash": "12e552742aedcebd",
-    "char_count": 54408,
+    "content_hash": "75fbb989262dc991",
+    "char_count": 50140,
     "price_count": 0,
     "prices": [],
     "error": null,
@@ -271,7 +271,7 @@
     ]
   },
   "https://www.tcgreus.nl/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "TCG Reus",
     "region": "nl-online",
     "games": [
@@ -282,8 +282,8 @@
     "ok": true,
     "status": 200,
     "title": "",
-    "content_hash": "94a4e69a0e728016",
-    "char_count": 56687,
+    "content_hash": "8ad5b44cf1df9b08",
+    "char_count": 64456,
     "price_count": 0,
     "prices": [],
     "error": null,
@@ -292,7 +292,7 @@
     ]
   },
   "https://tcgjapan.nl/nl/": {
-    "ts": "2026-09-07T05:03:03+00:00",
+    "ts": "2026-09-07T10:36:22+00:00",
     "shop": "TCG Japan",
     "region": "nl-online",
     "games": [
@@ -302,8 +302,8 @@
     "ok": true,
     "status": 200,
     "title": "",
-    "content_hash": "2bdf42f09e341892",
-    "char_count": 19365,
+    "content_hash": "fd25c180953ec783",
+    "char_count": 18913,
     "price_count": 0,
     "prices": [],
     "error": null,
